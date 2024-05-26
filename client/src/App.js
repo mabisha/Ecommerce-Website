@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./components/nav";
 import Home from "./components/home";
 import Contact from "./components/contact";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import "./App.css";
 
 function App() {
@@ -20,7 +23,15 @@ function App() {
         </div>
         <Nav />
         <div>
-          <h6>Icons</h6>
+          <AccountCircleOutlinedIcon
+            style={{ marginRight: "10px" }}
+          ></AccountCircleOutlinedIcon>
+          <FavoriteBorderOutlinedIcon
+            style={{ marginRight: "10px" }}
+          ></FavoriteBorderOutlinedIcon>
+          <ShoppingCartOutlinedIcon
+            style={{ marginRight: "10px" }}
+          ></ShoppingCartOutlinedIcon>
         </div>
       </div>
       <Routes>
