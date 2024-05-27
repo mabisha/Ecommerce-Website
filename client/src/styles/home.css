@@ -1,3 +1,7 @@
+.font{
+  font-family: Montserrat, sans-serif;
+}
+
 .carousel-container {
     position: relative;
     overflow: hidden;
@@ -24,7 +28,6 @@
   }
   
   .carousel-button {
-  
     border: none;
     padding: 10px;
     cursor: pointer;

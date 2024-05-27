@@ -7,8 +7,8 @@ import SupportAgentOutlinedIcon from "@mui/icons-material/SupportAgentOutlined";
 import CurrencyExchangeOutlinedIcon from "@mui/icons-material/CurrencyExchangeOutlined";
 import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
 import Deal from "./deals";
-
 import "../styles/home.css";
+
 const images = [
   { text: "Winter Offer", src: "../images/home-image.png" },
   { text: "Summer Offer", src: "../images/home-image2.png" },
@@ -42,11 +42,30 @@ function Home() {
                   paddingTop="50px"
                 >
                   <Grid item>
-                    <Typography variant="h6">Small Products</Typography>
-                    <Typography variant="h2">{item.text}</Typography>
-                    <Typography variant="h2">2024 Collection </Typography>
+                    <Typography
+                      variant="h6"
+                      style={{ fontFamily: "Montserrat, sans-serif" }}
+                    >
+                      Small Products
+                    </Typography>
+                    <Typography
+                      variant="h2"
+                      style={{ fontFamily: "Montserrat, sans-serif" }}
+                    >
+                      {item.text}
+                    </Typography>
+                    <Typography
+                      variant="h2"
+                      style={{ fontFamily: "Montserrat, sans-serif" }}
+                    >
+                      2024 Collection{" "}
+                    </Typography>
                     <Button
-                      style={{ border: "1px solid black", color: "black" }}
+                      style={{
+                        border: "1px solid black",
+                        color: "black",
+                        fontFamily: "Montserrat, sans-serif",
+                      }}
                     >
                       Shop Now
                     </Button>
@@ -85,12 +104,22 @@ function Home() {
                   ></LocalShippingOutlinedIcon>
                 </Grid>
                 <Grid item>
-                  <Typography variant="h5" style={{ fontSize: "18px" }}>
+                  <Typography
+                    variant="h5"
+                    style={{
+                      fontSize: "18px",
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
+                  >
                     Free Shipping
                   </Typography>
                   <Typography
                     variant="h6"
-                    style={{ fontSize: "12px", color: "#666666" }}
+                    style={{
+                      fontSize: "12px",
+                      color: "#666666",
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
                   >
                     Money return no question asked
                   </Typography>
@@ -106,12 +135,22 @@ function Home() {
                   ></SupportAgentOutlinedIcon>
                 </Grid>
                 <Grid item>
-                  <Typography variant="h5" style={{ fontSize: "18px" }}>
+                  <Typography
+                    variant="h5"
+                    style={{
+                      fontSize: "18px",
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
+                  >
                     Support 24/7
                   </Typography>
                   <Typography
                     variant="h6"
-                    style={{ fontSize: "12px", color: "#666666" }}
+                    style={{
+                      fontSize: "12px",
+                      color: "#666666",
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
                   >
                     Money return no question asked
                   </Typography>
@@ -127,12 +166,22 @@ function Home() {
                   ></CurrencyExchangeOutlinedIcon>
                 </Grid>
                 <Grid item>
-                  <Typography variant="h5" style={{ fontSize: "18px" }}>
+                  <Typography
+                    variant="h5"
+                    style={{
+                      fontSize: "18px",
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
+                  >
                     Money Return
                   </Typography>
                   <Typography
                     variant="h6"
-                    style={{ fontSize: "12px", color: "#666666" }}
+                    style={{
+                      fontSize: "12px",
+                      color: "#666666",
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
                   >
                     Money return no question asked
                   </Typography>
@@ -148,12 +197,22 @@ function Home() {
                   ></SavingsOutlinedIcon>
                 </Grid>
                 <Grid item>
-                  <Typography variant="h5" style={{ fontSize: "18px" }}>
+                  <Typography
+                    variant="h5"
+                    style={{
+                      fontSize: "18px",
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
+                  >
                     Discounts
                   </Typography>
                   <Typography
                     variant="h6"
-                    style={{ fontSize: "12px", color: "#666666" }}
+                    style={{
+                      fontSize: "12px",
+                      color: "#666666",
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
                   >
                     Money return no question asked
                   </Typography>
@@ -162,9 +221,7 @@ function Home() {
             </Grid>
           </Grid>
         </div>
-        <div className="deals">
-          <Deal />
-        </div>
+        <Deal />
       </Grid>
     </Box>
   );
