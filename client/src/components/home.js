@@ -2,6 +2,11 @@ import { Grid, Box, Typography, Button } from "@mui/material";
 import React, { useState } from "react";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
+import SupportAgentOutlinedIcon from "@mui/icons-material/SupportAgentOutlined";
+import CurrencyExchangeOutlinedIcon from "@mui/icons-material/CurrencyExchangeOutlined";
+import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
+import Deal from "./deals";
 
 import "../styles/home.css";
 const images = [
@@ -68,6 +73,97 @@ function Home() {
               onClick={nextSlide}
             ></ChevronRightIcon>
           </div>
+        </div>
+        <div className="cards">
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item>
+              <Grid container alignItems="center" gap="15px">
+                <Grid item>
+                  <LocalShippingOutlinedIcon
+                    className="icons"
+                    style={{ width: "50px", height: "50px" }}
+                  ></LocalShippingOutlinedIcon>
+                </Grid>
+                <Grid item>
+                  <Typography variant="h5" style={{ fontSize: "18px" }}>
+                    Free Shipping
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    style={{ fontSize: "12px", color: "#666666" }}
+                  >
+                    Money return no question asked
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Grid container alignItems="center" gap="15px">
+                <Grid item>
+                  <SupportAgentOutlinedIcon
+                    className="icons"
+                    style={{ width: "50px", height: "50px" }}
+                  ></SupportAgentOutlinedIcon>
+                </Grid>
+                <Grid item>
+                  <Typography variant="h5" style={{ fontSize: "18px" }}>
+                    Support 24/7
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    style={{ fontSize: "12px", color: "#666666" }}
+                  >
+                    Money return no question asked
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Grid container alignItems="center" gap="15px">
+                <Grid item>
+                  <CurrencyExchangeOutlinedIcon
+                    className="icons"
+                    style={{ width: "50px", height: "50px" }}
+                  ></CurrencyExchangeOutlinedIcon>
+                </Grid>
+                <Grid item>
+                  <Typography variant="h5" style={{ fontSize: "18px" }}>
+                    Money Return
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    style={{ fontSize: "12px", color: "#666666" }}
+                  >
+                    Money return no question asked
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Grid container alignItems="center" gap="15px">
+                <Grid item>
+                  <SavingsOutlinedIcon
+                    className="icons"
+                    style={{ width: "50px", height: "50px" }}
+                  ></SavingsOutlinedIcon>
+                </Grid>
+                <Grid item>
+                  <Typography variant="h5" style={{ fontSize: "18px" }}>
+                    Discounts
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    style={{ fontSize: "12px", color: "#666666" }}
+                  >
+                    Money return no question asked
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </div>
+        <div className="deals">
+          <Deal />
         </div>
       </Grid>
     </Box>
