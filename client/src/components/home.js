@@ -7,6 +7,7 @@ import SupportAgentOutlinedIcon from "@mui/icons-material/SupportAgentOutlined";
 import CurrencyExchangeOutlinedIcon from "@mui/icons-material/CurrencyExchangeOutlined";
 import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
 import Deal from "./deals";
+import Blogs from "./blogs";
 import "../styles/home.css";
 
 const images = [
@@ -222,6 +223,7 @@ function Home() {
           </Grid>
         </div>
         <Deal />
+        <Blogs />
       </Grid>
     </Box>
   );

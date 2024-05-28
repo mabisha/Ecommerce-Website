@@ -38,7 +38,10 @@ function Deal() {
               />
               <Typography
                 variant="h3"
-                style={{ fontFamily: "Montserrat, sans-serif" }}
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontWeight: "500",
+                }}
               >
                 Daily Deals
               </Typography>
@@ -58,7 +61,7 @@ function Deal() {
                 style={{
                   fontFamily: "Montserrat, sans-serif",
                   color: active === "best" ? "white" : "black",
-                  margin: "50px 20px 50px 20px",
+                  margin: "20px",
                   backgroundColor: active === "best" ? "black" : "",
                 }}
                 onClick={() => handleCategoryChange("best")}
@@ -69,7 +72,7 @@ function Deal() {
                 style={{
                   fontFamily: "Montserrat, sans-serif",
                   color: active === "new" ? "white" : "black",
-                  margin: "50px 20px 50px 20px",
+                  margin: "20px",
                   backgroundColor: active === "new" ? "black" : "",
                 }}
                 onClick={() => handleCategoryChange("new")}
@@ -80,7 +83,7 @@ function Deal() {
                 style={{
                   fontFamily: "Montserrat, sans-serif",
                   color: active === "sale" ? "white" : "black",
-                  margin: "50px 20px 50px 20px",
+                  margin: "20px",
                   backgroundColor: active === "sale" ? "black" : "",
                 }}
                 onClick={() => handleCategoryChange("sale")}
