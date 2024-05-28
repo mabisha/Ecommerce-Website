@@ -9,6 +9,7 @@ import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
 import Deal from "./deals";
 import Blogs from "./blogs";
 import "../styles/home.css";
+import Footer from "./footer";
 
 const images = [
   { text: "Winter Offer", src: "../images/home-image.png" },
@@ -224,6 +225,7 @@ function Home() {
         </div>
         <Deal />
         <Blogs />
+        <Footer></Footer>
       </Grid>
     </Box>
   );

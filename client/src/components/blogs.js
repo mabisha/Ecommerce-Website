@@ -8,7 +8,7 @@ function Blogs() {
           justifyContent="center"
           flexDirection="column"
           alignItems="center"
-          gap="6"
+          gap="5"
         >
           <Grid item>
             <div
@@ -44,6 +44,33 @@ function Blogs() {
                 }}
               />
             </div>
+          </Grid>
+          <Grid item style={{ margin: "40px" }}>
+            <Grid
+              container
+              spacing={6}
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Grid item>
+                <a>
+                  <img
+                    src="../images/blog-1.jpg"
+                    width="100%"
+                    height="auto"
+                  ></img>
+                </a>
+              </Grid>
+              <Grid item>
+                <a>
+                  <img
+                    src="../images/blog-2.jpg"
+                    width="100%"
+                    height="auto"
+                  ></img>
+                </a>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Box>
