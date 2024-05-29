@@ -17,11 +17,21 @@ function Nav() {
           </Link>
         </li>
         <li className="app-list">
+          <Link style={{ textDecoration: "none", color: "black" }} to="/about">
+            About Us
+          </Link>
+        </li>
+        <li className="app-list">
           <Link
             style={{ textDecoration: "none", color: "black" }}
             to="/contact"
           >
             Contact
+          </Link>
+        </li>
+        <li className="app-list">
+          <Link style={{ textDecoration: "none", color: "black" }} to="/blog">
+            Blog
           </Link>
         </li>
       </ul>
