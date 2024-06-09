@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./components/nav";
-import Home from "./components/home";
-import Contact from "./components/contact";
-import Blogs from "./components/blogs";
+import Home from "./container/Home/home";
+import Contact from "./container/Contact/contact";
+import Blogs from "./components/blogslist";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
