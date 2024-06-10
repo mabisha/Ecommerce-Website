@@ -1,4 +1,10 @@
+import Footer from "../../components/footer";
+
 function Contact() {
-  return <div>This is contact</div>;
+  return (
+    <div>
+      <Footer></Footer>
+    </div>
+  );
 }
 export default Contact;

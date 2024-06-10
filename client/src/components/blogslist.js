@@ -1,5 +1,5 @@
 import { Box, Grid, Typography, Divider } from "@mui/material";
-function Blogs() {
+function BlogsList() {
   return (
     <div className="blogs">
       <Box>
@@ -78,4 +78,4 @@ function Blogs() {
   );
 }
 
-export default Blogs;
+export default BlogsList;

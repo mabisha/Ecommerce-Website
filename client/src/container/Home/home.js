@@ -7,7 +7,7 @@ import SupportAgentOutlinedIcon from "@mui/icons-material/SupportAgentOutlined";
 import CurrencyExchangeOutlinedIcon from "@mui/icons-material/CurrencyExchangeOutlined";
 import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
 import Deal from "../../components/deals";
-import Blogs from "../../components/blogslist";
+import BlogsList from "../../components/blogslist";
 import "../Home/home.css";
 import Footer from "../../components/footer";
 
@@ -224,7 +224,7 @@ function Home() {
           </Grid>
         </div>
         <Deal />
-        <Blogs />
+        <BlogsList />
         <Footer></Footer>
       </Grid>
     </Box>
