@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Nav from "./components/nav";
 import Home from "./container/Home/home";
 import Contact from "./container/Contact/contact";
-import Blogs from "./container/Blogs/blogs";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import "./App.css";
+import { Shop } from "./container/Shop/shop";
 
 function App() {
   const [menu, setMenu] = useState("Home");
@@ -64,8 +64,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={<Blogs />} />
-        <Route path="/shop" element={<Contact />} />
+        <Route path="/shop" element={<Shop />} />
       </Routes>
     </Router>
   );

@@ -41,18 +41,6 @@ const Nav = ({ menu, setMenu }) => {
               textDecoration: "none",
               color: "black",
             }}
-            to="/blog"
-            onClick={() => setMenu("Blog")}
-          >
-            Blog {menu === "Blog" ? <hr color="#ce9aff" /> : <></>}
-          </Link>
-        </li>
-        <li className="app-list">
-          <Link
-            style={{
-              textDecoration: "none",
-              color: "black",
-            }}
             to="/contact"
             onClick={() => setMenu("Contact")}
           >
