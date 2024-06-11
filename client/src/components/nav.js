@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import "../App.css";
+import { useState } from "react";
 const Nav = ({ menu, setMenu }) => {
+  const [dropDownVisible, setDropDownVisible] = useState(false);
   return (
     <nav
       style={{
