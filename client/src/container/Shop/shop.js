@@ -1,7 +1,16 @@
-import { Box, Grid, Typography, Button } from "@mui/material";
-import React from "react";
+import { Box, Grid, Typography, Button, Pagination } from "@mui/material";
+import React, { useState } from "react";
 import data from "../../data.json";
 export const Shop = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6;
+  const handlePageChange = (event, value) => {
+    console.log(value);
+    setCurrentPage(value);
+  };
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
   return (
     <Box m={4}>
       <Grid
@@ -10,7 +19,7 @@ export const Shop = () => {
         justifyContent="space-around"
         alignItems="center"
       >
-        {data.map((item, index) => (
+        {currentItems.map((item, index) => (
           <Grid item key={index} xs={4}>
             <img
               src={item.path}
@@ -62,6 +71,13 @@ export const Shop = () => {
           </Grid>
         ))}
       </Grid>
+      <Box display="flex" mt={4} justifyContent="flex-end">
+        <Pagination
+          count={Math.ceil(data.length / itemsPerPage)}
+          value={currentPage}
+          onChange={handlePageChange}
+        ></Pagination>
+      </Box>
     </Box>
   );
 };
