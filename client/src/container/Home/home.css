@@ -1,7 +1,28 @@
 .font{
   font-family: Montserrat, sans-serif;
 }
-
+.male-banner{
+  background-image: url("../../../public/images/male-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:400px;
+  height: 200px;
+}.female-banner {
+  background-image: url("../../../public/images/female-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 200px;
+}.kids-banner {
+  background-image: url("../../../public/images/kids-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 200px;
+}
 .carousel-container {
     position: relative;
     overflow: hidden;

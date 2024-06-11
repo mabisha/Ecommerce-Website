@@ -78,7 +78,7 @@ function App() {
         </div>
       </div>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home menu={menu} setMenu={setMenu} />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/shop" element={<Shop />}>
           <Route path=":productId" element={<Shop />}></Route>

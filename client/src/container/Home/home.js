@@ -8,13 +8,13 @@ import CurrencyExchangeOutlinedIcon from "@mui/icons-material/CurrencyExchangeOu
 import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
 import Deal from "../../components/deals";
 import "../Home/home.css";
-import Footer from "../../components/footer";
+import { Banner } from "../../components/banner";
 
 const images = [
   { text: "Winter Offer", src: "../images/home-image.png" },
   { text: "Summer Offer", src: "../images/home-image2.png" },
 ];
-function Home() {
+const Home = ({ menu, setMenu }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev === 0 ? images.length - 1 : prev - 1));
@@ -223,8 +223,9 @@ function Home() {
           </Grid>
         </div>
         <Deal />
+        <Banner menu={menu} setMenu={setMenu}></Banner>
       </Grid>
     </Box>
   );
-}
+};
 export default Home;
