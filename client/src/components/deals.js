@@ -100,7 +100,7 @@ function Deal() {
               justifyContent="center"
             >
               {filterData.map((item, index) => (
-                <Grid item key={index} xs={4}>
+                <Grid item key={index} xs={3}>
                   <img
                     src={item.path}
                     alt={`${item.id}`}

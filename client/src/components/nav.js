@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import "../App.css";
-import { useState } from "react";
 const Nav = ({ menu, setMenu }) => {
-  const [dropDownVisible, setDropDownVisible] = useState(false);
   return (
     <nav
       style={{
@@ -25,7 +23,7 @@ const Nav = ({ menu, setMenu }) => {
             Home {menu === "Home" ? <hr color="#ce9aff" /> : ""}
           </Link>
         </li>
-        <li className="app-list">
+        <li className="app-list shop-menu">
           <Link
             style={{
               textDecoration: "none",
@@ -34,8 +32,51 @@ const Nav = ({ menu, setMenu }) => {
             to="/shop"
             onClick={() => setMenu("Shop")}
           >
-            Shop {menu === "Shop" ? <hr color="#ce9aff" /> : <></>}
+            Shop
+            {(menu === "Shop" ||
+              menu === "Men" ||
+              menu === "Women" ||
+              menu === "Kid") && <hr color="#ce9aff" />}
           </Link>
+
+          <ul className="dropdown-menu">
+            <li className="dropdown-list">
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: menu === "Men" ? "#b260ff" : "inherit",
+                }}
+                to="/men"
+                onClick={() => setMenu("Men")}
+              >
+                Men
+              </Link>
+            </li>
+            <li className="dropdown-list">
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: menu === "Women" ? "#ce9aff" : "inherit",
+                }}
+                to="/women"
+                onClick={() => setMenu("Women")}
+              >
+                Women
+              </Link>
+            </li>
+            <li className="dropdown-list">
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: menu === "Kid" ? "#ce9aff" : "inherit",
+                }}
+                to="/kids"
+                onClick={() => setMenu("Kid")}
+              >
+                Kid
+              </Link>
+            </li>
+          </ul>
         </li>
         <li className="app-list">
           <Link

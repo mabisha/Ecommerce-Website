@@ -223,7 +223,6 @@ function Home() {
           </Grid>
         </div>
         <Deal />
-        <Footer></Footer>
       </Grid>
     </Box>
   );

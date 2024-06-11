@@ -5,15 +5,15 @@ import Home from "./container/Home/home";
 import Contact from "./container/Contact/contact";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import "./App.css";
 import { Shop } from "./container/Shop/shop";
+import { ShopCategory } from "./container/ShopCategory/shopCategory";
+import { Cart } from "./container/Cart/cart";
+import { Login } from "./container/Login/login";
+import Footer from "./components/footer";
 
 function App() {
   const [menu, setMenu] = useState("Home");
-  const handleOpenLogin = () => {
-    console.log("helloe");
-  };
   return (
     <Router>
       <div
@@ -46,17 +46,33 @@ function App() {
             alignItems: "center",
           }}
         >
-          <AccountCircleOutlinedIcon
-            style={{ marginRight: "20px", cursor: "pointer" }}
-            onClick={handleOpenLogin}
-          />
-          {/* <FavoriteBorderOutlinedIcon
-            style={{ marginRight: "10px", cursor: "pointer" }}
-          /> */}
-          <div style={{ position: "relative" }}>
-            <ShoppingCartOutlinedIcon
-              style={{ marginRight: "10px", cursor: "pointer" }}
+          <Link
+            to="/login"
+            style={{
+              textDecoration: "none",
+              color: "black",
+            }}
+            onClick={() => setMenu("")}
+          >
+            <AccountCircleOutlinedIcon
+              style={{ marginRight: "20px", cursor: "pointer" }}
             />
+          </Link>
+
+          <div style={{ position: "relative" }}>
+            <Link
+              to="/cart"
+              style={{
+                textDecoration: "none",
+                color: "black",
+              }}
+              onClick={() => setMenu("")}
+            >
+              <ShoppingCartOutlinedIcon
+                style={{ marginRight: "10px", cursor: "pointer" }}
+              />
+            </Link>
+
             <div className="shop-cart-counter">0</div>
           </div>
         </div>
@@ -64,8 +80,16 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/shop" element={<Shop />} />
+        <Route path="/shop" element={<Shop />}>
+          <Route path=":productId" element={<Shop />}></Route>
+        </Route>
+        <Route path="/men" element={<ShopCategory category="men" />} />
+        <Route path="/women" element={<ShopCategory category="women" />} />
+        <Route path="/kids" element={<ShopCategory category="kids" />} />
+        <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/login" element={<Login />}></Route>
       </Routes>
+      <Footer />
     </Router>
   );
 }

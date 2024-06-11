@@ -4,7 +4,8 @@
         "path": "../images/1.jpg",
         "type": "sale",
         "new-price": 11.75,
-        "desc": "Lorem Ispeum Female outfit"
+        "desc": "Lorem Ispeum Female outfit",
+        "cateogry": "men"
     },
     {
         "id": 2,
@@ -12,7 +13,8 @@
         "type": "new",
         "old-price": 23.00,
         "new-price": 20.00,
-         "desc": "Lorem Ispeum Female outfit"
+        "desc": "Lorem Ispeum Female outfit",
+        "cateogry": "women"
     },
     {
         "id": 3,
@@ -20,7 +22,8 @@
         "type": "best",
         "old-price": 9.50,
         "new-price": 4.99,
-         "desc": "Lorem Ispeum Female outfit"
+        "desc": "Lorem Ispeum Female outfit",
+        "cateogry": "men"
     },
     {
         "id": 4,
@@ -28,7 +31,8 @@
         "type": "sale",
         "old-price": 13.50,
         "new-price": 11.19,
-         "desc": "Lorem Ispeum Female outfit"
+        "desc": "Lorem Ispeum Female outfit",
+        "cateogry": "women"
     },
     {
         "id": 5,
@@ -36,14 +40,17 @@
         "type": "new",
         "old-price": 14.00,
         "new-price": 12.19,
-         "desc": "Lorem Ispeum Female outfit"
+         "desc": "Lorem Ispeum Female outfit",
+         "cateogry": "women"
     },
     {
         "id": 6,
         "path": "../images/6.jpg",
         "type": "best",
         "new-price": 10.00,
-         "desc": "Lorem Ispeum Female outfit"
+         "desc": "Lorem Ispeum Female outfit",
+         "cateogry": "men"
+
     },
     {
         "id": 7,
@@ -51,14 +58,16 @@
         "type": "sale",
         "old-price": 12.75,
         "new-price": 9.99,
-         "desc": "Lorem Ispeum Female outfit"
+         "desc": "Lorem Ispeum Female outfit",
+         "cateogry": "women"
     },
     {
         "id": 8,
         "path": "../images/8.jpg",
         "type": "new",
         "new-price": 10.50,
-         "desc": "Lorem Ispeum Female outfit"
+         "desc": "Lorem Ispeum Female outfit",
+         "cateogry": "men"
     },
     {
         "id": 9,
@@ -66,6 +75,95 @@
         "type": "best",
         "old-price": 15.00,
         "new-price": 13.00,
-         "desc": "Lorem Ispeum Female outfit"
+         "desc": "Lorem Ispeum Female outfit",
+         "cateogry": "women"
+    },
+     {
+        "id": 10,
+        "path": "../images/10.jpg",
+        "type": "sale",
+        "new-price": 11.75,
+        "desc": "Lorem Ispeum Female outfit",
+        "cateogry": "men"
+    },
+    {
+        "id": 11,
+        "path": "../images/11.jpg",
+        "type": "new",
+        "old-price": 23.00,
+        "new-price": 20.00,
+        "desc": "Lorem Ispeum Female outfit",
+        "cateogry": "men"
+    },
+    {
+        "id": 12,
+        "path": "../images/12.jpg",
+        "type": "best",
+        "old-price": 9.50,
+        "new-price": 4.99,
+        "desc": "Lorem Ispeum Female outfit",
+        "cateogry": "kids"
+    },
+    {
+        "id": 13,
+        "path": "../images/13.jpg",
+        "type": "best",
+        "old-price": 9.50,
+        "new-price": 4.99,
+        "desc": "Lorem Ispeum Female outfit",
+        "cateogry": "kids"
+    },
+    {
+        "id": 14,
+        "path": "../images/14.jpg",
+        "type": "sale",
+        "old-price": 13.50,
+        "new-price": 11.19,
+        "desc": "Lorem Ispeum Female outfit",
+        "cateogry": "kids"
+    },
+    {
+        "id": 15,
+        "path": "../images/15.jpg",
+        "type": "new",
+        "old-price": 14.00,
+        "new-price": 12.19,
+         "desc": "Lorem Ispeum Female outfit",
+         "cateogry": "kids"
+    },
+    {
+        "id": 16,
+        "path": "../images/16.jpg",
+        "type": "best",
+        "new-price": 10.00,
+         "desc": "Lorem Ispeum Female outfit",
+         "cateogry": "kids"
+
+    },
+    {
+        "id": 17,
+        "path": "../images/17.jpg",
+        "type": "sale",
+        "old-price": 12.75,
+        "new-price": 9.99,
+         "desc": "Lorem Ispeum Female outfit",
+         "cateogry": "kids"
+    },
+    {
+        "id": 18,
+        "path": "../images/18.jpg",
+        "type": "new",
+        "new-price": 10.50,
+         "desc": "Lorem Ispeum Female outfit",
+         "cateogry": "kids"
+    },
+    {
+        "id": 19,
+        "path": "../images/19.jpg",
+        "type": "best",
+        "old-price": 15.00,
+        "new-price": 13.00,
+         "desc": "Lorem Ispeum Female outfit",
+         "cateogry": "kids"
     }
 ]
