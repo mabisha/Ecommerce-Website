@@ -33,7 +33,11 @@ const Home = ({ menu, setMenu }) => {
             {images.map((item, index) => (
               <div
                 className="carousel-item"
-                style={{ backgroundColor: "#F0E0FF" }}
+                style={{
+                  backgroundColor: "#F0E0FF",
+                  width: "100%",
+                  height: "auto",
+                }}
                 key={index}
               >
                 <Grid

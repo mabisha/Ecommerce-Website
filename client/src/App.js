@@ -83,9 +83,27 @@ function App() {
         <Route path="/shop" element={<Shop />}>
           <Route path=":productId" element={<Shop />}></Route>
         </Route>
-        <Route path="/men" element={<ShopCategory category="men" />} />
-        <Route path="/women" element={<ShopCategory category="women" />} />
-        <Route path="/kids" element={<ShopCategory category="kids" />} />
+        <Route
+          path="/men"
+          element={
+            <ShopCategory banner="../images/male-banner.jpg" category="men" />
+          }
+        />
+        <Route
+          path="/women"
+          element={
+            <ShopCategory
+              banner="../images/female-banner.jpg"
+              category="women"
+            />
+          }
+        />
+        <Route
+          path="/kids"
+          element={
+            <ShopCategory banner="../images/kids-banner.jpg" category="kids" />
+          }
+        />
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/login" element={<Login />}></Route>
       </Routes>
