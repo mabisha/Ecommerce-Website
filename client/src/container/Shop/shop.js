@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import data from "../../data.json";
 export const Shop = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6;
+  const itemsPerPage = 4;
   const handlePageChange = (event, value) => {
     console.log(value);
     setCurrentPage(value);
@@ -20,7 +20,7 @@ export const Shop = () => {
         alignItems="center"
       >
         {currentItems.map((item, index) => (
-          <Grid item key={index} xs={4}>
+          <Grid item key={index} xs={3}>
             <img
               src={item.path}
               alt={`${item.id}`}

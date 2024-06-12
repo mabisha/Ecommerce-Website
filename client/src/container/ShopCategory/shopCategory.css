@@ -12,7 +12,6 @@
 .shop-category-text {
     position: absolute;
     top: 50%;
-    transform: translate(-70%, -50%);
     font-size: 2rem;
     text-align: center;
     text-transform: capitalize;
