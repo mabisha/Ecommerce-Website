@@ -15,7 +15,11 @@ export const Login = () => {
         <Grid item>
           <Typography
             variant="h4"
-            style={{ fontFamily: "Montserrat, sans-serif", fontWeight: "500" }}
+            style={{
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: "700",
+              color: "#a443ff",
+            }}
           >
             Login
           </Typography>
@@ -54,7 +58,7 @@ export const Login = () => {
                   style={{
                     padding: "5px 35px 5px 35px",
                     color: "black",
-                    backgroundColor: "#ce9aff",
+                    backgroundColor: "#cccccc",
                   }}
                 >
                   Login
