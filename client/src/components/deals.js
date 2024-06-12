@@ -1,14 +1,19 @@
 import { Typography } from "@mui/material";
 import { Box, Grid, Button, Divider } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import data from "../data.json";
+import { Loadmore } from "./loadmore";
 function Deal() {
   const [category, setCategory] = useState("best");
   const [active, setActive] = useState("best");
+  const [visibleData, setVisibleData] = useState(4);
   const handleCategoryChange = (newCategory) => {
     setCategory(newCategory);
     setActive(newCategory);
   };
+  useEffect(() => {
+    setVisibleData(4);
+  }, [category]);
   const filterData = data.filter((item, index) => item.type === category);
   return (
     <div className="deals">
@@ -99,7 +104,7 @@ function Deal() {
               alignItems="center"
               justifyContent="center"
             >
-              {filterData.map((item, index) => (
+              {filterData.slice(0, visibleData).map((item, index) => (
                 <Grid item key={index} xs={3}>
                   <img
                     src={item.path}
@@ -152,6 +157,7 @@ function Deal() {
               ))}
             </Grid>
           </Grid>
+          <Loadmore visibleData={visibleData} setVisibleData={setVisibleData} />
         </Grid>
       </Box>
     </div>
