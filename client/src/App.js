@@ -1,5 +1,11 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useLocation,
+} from "react-router-dom";
 import Nav from "./components/nav";
 import Home from "./container/Home/home";
 import Contact from "./container/Contact/contact";
@@ -12,10 +18,30 @@ import { Cart } from "./container/Cart/cart";
 import { Login } from "./container/Login/login";
 import Footer from "./components/footer";
 
-function App() {
-  const [menu, setMenu] = useState("Home");
+const AppContent = ({ menu, setMenu }) => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const path = location.pathname;
+    if (path === "/") {
+      setMenu("Home");
+    } else if (path === "/contact") {
+      setMenu("Contact");
+    } else if (path.startsWith("/shop")) {
+      setMenu("Shop");
+    } else if (path === "/men") {
+      setMenu("Men");
+    } else if (path === "/women") {
+      setMenu("Women");
+    } else if (path === "/kids") {
+      setMenu("Kids");
+    } else {
+      setMenu("");
+    }
+  }, [location]);
+
   return (
-    <Router>
+    <>
       <div
         style={{
           display: "flex",
@@ -108,6 +134,16 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
       </Routes>
       <Footer />
+    </>
+  );
+};
+
+function App() {
+  const [menu, setMenu] = useState("Home");
+
+  return (
+    <Router>
+      <AppContent menu={menu} setMenu={setMenu} />
     </Router>
   );
 }
