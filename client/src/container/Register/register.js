@@ -2,7 +2,7 @@ import { Box, Grid, TextField, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import React from "react";
 
-export const Login = () => {
+export const Register = () => {
   const handleSubmit = () => {};
 
   return (
@@ -72,6 +72,9 @@ export const Login = () => {
                   type="password"
                   variant="outlined"
                 />
+              </Grid>
+              <Grid item>
+                <TextField label="Email" type="email" variant="outlined" />
               </Grid>
               <Grid item>
                 <Button

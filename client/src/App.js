@@ -17,6 +17,8 @@ import { ShopCategory } from "./container/ShopCategory/shopCategory";
 import { Cart } from "./container/Cart/cart";
 import { Login } from "./container/Login/login";
 import Footer from "./components/footer";
+import { Register } from "./container/Register/register";
+import { Product } from "./container/Product/product";
 
 const AppContent = ({ menu, setMenu }) => {
   const location = useLocation();
@@ -35,7 +37,7 @@ const AppContent = ({ menu, setMenu }) => {
       setMenu("Women");
     } else if (path === "/kids") {
       setMenu("Kids");
-    } else if (path === "/login") {
+    } else if (path === "/login" || path === "/register") {
       setMenu("Login");
     } else if (path === "/cart") {
       setMenu("Cart");
@@ -116,7 +118,8 @@ const AppContent = ({ menu, setMenu }) => {
       <Routes>
         <Route path="/" element={<Home menu={menu} setMenu={setMenu} />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/shop" element={<Shop />}>
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/product" element={<Product />}>
           <Route path=":productId" element={<Shop />}></Route>
         </Route>
         <Route
@@ -142,6 +145,7 @@ const AppContent = ({ menu, setMenu }) => {
         />
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/register" element={<Register />}></Route>
       </Routes>
       <Footer />
     </>
