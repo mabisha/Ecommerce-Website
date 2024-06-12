@@ -35,6 +35,10 @@ const AppContent = ({ menu, setMenu }) => {
       setMenu("Women");
     } else if (path === "/kids") {
       setMenu("Kids");
+    } else if (path === "/login") {
+      setMenu("Login");
+    } else if (path === "/cart") {
+      setMenu("Cart");
     } else {
       setMenu("");
     }
@@ -76,12 +80,15 @@ const AppContent = ({ menu, setMenu }) => {
             to="/login"
             style={{
               textDecoration: "none",
-              color: "black",
             }}
-            onClick={() => setMenu("")}
+            onClick={() => setMenu("Login")}
           >
             <AccountCircleOutlinedIcon
-              style={{ marginRight: "20px", cursor: "pointer" }}
+              style={{
+                marginRight: "20px",
+                cursor: "pointer",
+                color: menu == "Login" ? "#b469fa" : "black",
+              }}
             />
           </Link>
 
@@ -90,12 +97,15 @@ const AppContent = ({ menu, setMenu }) => {
               to="/cart"
               style={{
                 textDecoration: "none",
-                color: "black",
               }}
-              onClick={() => setMenu("")}
+              onClick={() => setMenu("Cart")}
             >
               <ShoppingCartOutlinedIcon
-                style={{ marginRight: "10px", cursor: "pointer" }}
+                style={{
+                  marginRight: "10px",
+                  cursor: "pointer",
+                  color: menu == "Cart" ? "#b469fa" : "black",
+                }}
               />
             </Link>
 
