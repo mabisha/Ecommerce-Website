@@ -4,8 +4,9 @@
         "path": "../images/1.jpg",
         "type": "sale",
         "new-price": 11.75,
-        "desc": "Lorem Ispeum Female outfit",
-        "category": "men"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
+        "category": "men",
+        "title": "Men's Sale Outfit"
     },
     {
         "id": 2,
@@ -13,8 +14,9 @@
         "type": "new",
         "old-price": 23.00,
         "new-price": 20.00,
-        "desc": "Lorem Ispeum Female outfit",
-        "category": "women"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
+        "category": "women",
+        "title": "Women's New Arrival"
     },
     {
         "id": 3,
@@ -22,8 +24,9 @@
         "type": "best",
         "old-price": 9.50,
         "new-price": 4.99,
-        "desc": "Lorem Ispeum Female outfit",
-        "category": "men"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
+        "category": "men",
+        "title": "Men's Best Seller"
     },
     {
         "id": 4,
@@ -31,8 +34,9 @@
         "type": "sale",
         "old-price": 13.50,
         "new-price": 11.19,
-        "desc": "Lorem Ispeum Female outfit",
-        "category": "women"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        "category": "women",
+        "title": "Women's Sale Outfit"
     },
     {
         "id": 5,
@@ -40,17 +44,17 @@
         "type": "new",
         "old-price": 14.00,
         "new-price": 12.19,
-         "desc": "Lorem Ispeum Female outfit",
-         "category": "women"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        "title": "Women's New Arrival"
     },
     {
         "id": 6,
         "path": "../images/6.jpg",
         "type": "best",
         "new-price": 10.00,
-         "desc": "Lorem Ispeum Female outfit",
-         "category": "men"
-
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
+        "category": "men",
+        "title": "Men's Best Seller"
     },
     {
         "id": 7,
@@ -58,16 +62,18 @@
         "type": "sale",
         "old-price": 12.75,
         "new-price": 9.99,
-         "desc": "Lorem Ispeum Female outfit",
-         "category": "women"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. .",
+        "category": "women",
+        "title": "Women's Sale Outfit"
     },
     {
         "id": 8,
         "path": "../images/8.jpg",
         "type": "new",
         "new-price": 10.50,
-         "desc": "Lorem Ispeum Female outfit",
-         "category": "men"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
+        "category": "men",
+        "title": "Men's New Arrival"
     },
     {
         "id": 9,
@@ -75,16 +81,18 @@
         "type": "best",
         "old-price": 15.00,
         "new-price": 13.00,
-         "desc": "Lorem Ispeum Female outfit",
-         "category": "women"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.,",
+        "category": "women",
+        "title": "Women's Best Seller"
     },
-     {
+    {
         "id": 10,
         "path": "../images/10.jpg",
         "type": "sale",
         "new-price": 11.75,
-        "desc": "Lorem Ispeum Female outfit",
-        "category": "men"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        "category": "men",
+        "title": "Men's Sale Outfit"
     },
     {
         "id": 11,
@@ -92,8 +100,9 @@
         "type": "new",
         "old-price": 23.00,
         "new-price": 20.00,
-        "desc": "Lorem Ispeum Female outfit",
-        "category": "men"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur., ",
+        "category": "men",
+        "title": "Men's New Arrival"
     },
     {
         "id": 12,
@@ -101,8 +110,9 @@
         "type": "best",
         "old-price": 9.50,
         "new-price": 4.99,
-        "desc": "Lorem Ispeum Female outfit",
-        "category": "kids"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
+        "category": "kids",
+        "title": "Kids' Best Seller"
     },
     {
         "id": 13,
@@ -110,8 +120,9 @@
         "type": "best",
         "old-price": 9.50,
         "new-price": 4.99,
-        "desc": "Lorem Ispeum Female outfit",
-        "category": "kids"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
+        "category": "kids",
+        "title": "Kids' Best Seller"
     },
     {
         "id": 14,
@@ -119,8 +130,9 @@
         "type": "sale",
         "old-price": 13.50,
         "new-price": 11.19,
-        "desc": "Lorem Ispeum Female outfit",
-        "category": "kids"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
+        "category": "kids",
+        "title": "Kids' Sale Outfit"
     },
     {
         "id": 15,
@@ -128,17 +140,18 @@
         "type": "new",
         "old-price": 14.00,
         "new-price": 12.19,
-         "desc": "Lorem Ispeum Female outfit",
-         "category": "kids"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur., ",
+        "category": "kids",
+        "title": "Kids' New Arrival"
     },
     {
         "id": 16,
         "path": "../images/16.jpg",
         "type": "best",
         "new-price": 10.00,
-         "desc": "Lorem Ispeum Female outfit",
-         "category": "kids"
-
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
+        "category": "kids",
+        "title": "Kids' Best Seller"
     },
     {
         "id": 17,
@@ -146,16 +159,18 @@
         "type": "sale",
         "old-price": 12.75,
         "new-price": 9.99,
-         "desc": "Lorem Ispeum Female outfit",
-         "category": "kids"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
+        "category": "kids",
+        "title": "Kids' Sale Outfit"
     },
     {
         "id": 18,
         "path": "../images/18.jpg",
         "type": "new",
         "new-price": 10.50,
-         "desc": "Lorem Ispeum Female outfit",
-         "category": "kids"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur., ",
+        "category": "kids",
+        "title": "Kids' New Arrival"
     },
     {
         "id": 19,
@@ -163,8 +178,9 @@
         "type": "best",
         "old-price": 15.00,
         "new-price": 13.00,
-         "desc": "Lorem Ispeum Female outfit",
-         "category": "kids"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
+        "category": "kids",
+        "title": "Kids' Best Seller"
     },
     {
         "id": 20,
@@ -172,8 +188,9 @@
         "type": "new",
         "old-price": 23.00,
         "new-price": 20.00,
-        "desc": "Lorem Ispeum Female outfit",
-        "category": "women"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        "category": "women",
+        "title": "Women's New Arrival"
     },
     {
         "id": 21,
@@ -181,17 +198,19 @@
         "type": "new",
         "old-price": 23.00,
         "new-price": 20.00,
-        "desc": "Lorem Ispeum Female outfit",
-        "category": "women"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur..",
+        "category": "women",
+        "title": "Women's New Arrival"
     },
-      {
+    {
         "id": 22,
         "path": "../images/22.jpg",
         "type": "new",
         "old-price": 23.00,
         "new-price": 20.00,
-        "desc": "Lorem Ispeum Female outfit",
-        "category": "women"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        "category": "women",
+        "title": "Women's New Arrival"
     },
     {
         "id": 23,
@@ -199,8 +218,9 @@
         "type": "best",
         "old-price": 9.50,
         "new-price": 4.99,
-        "desc": "Lorem Ispeum Female outfit",
-        "category": "women"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur., a best seller among women. Affordable and fashionable.",
+        "category": "women",
+        "title": "Women's Best Seller"
     },
     {
         "id": 24,
@@ -208,8 +228,9 @@
         "type": "sale",
         "old-price": 13.50,
         "new-price": 11.19,
-        "desc": "Lorem Ispeum Female outfit",
-        "category": "women"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        "category": "women",
+        "title": "Women's Sale Outfit"
     },
     {
         "id": 25,
@@ -217,17 +238,18 @@
         "type": "new",
         "old-price": 14.00,
         "new-price": 12.19,
-         "desc": "Lorem Ispeum Female outfit",
-         "category": "men"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        "category": "men",
+        "title": "Men's New Arrival"
     },
     {
         "id": 26,
         "path": "../images/26.jpg",
         "type": "new",
         "new-price": 10.00,
-         "desc": "Lorem Ispeum Female outfit",
-         "category": "men"
-
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.,",
+        "category": "men",
+        "title": "Men's New Arrival"
     },
     {
         "id": 27,
@@ -235,9 +257,8 @@
         "type": "sale",
         "old-price": 12.75,
         "new-price": 9.99,
-         "desc": "Lorem Ispeum Female outfit",
-         "category": "kids"
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        "category": "kids",
+        "title": "Kids' Sale Outfit"
     }
-   
-  
 ]
