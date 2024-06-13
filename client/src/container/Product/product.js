@@ -8,7 +8,7 @@ export const Product = () => {
   const { productId } = useParams();
   const product = data.find((item, index) => item.id === Number(productId));
   return (
-    <Box>
+    <Box m={4}>
       <Grid container justifyContent="center" alignItems="center" spacing={2}>
         <Grid item>
           <Grid container direction="column" spacing={2}>
