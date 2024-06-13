@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import { Box, Grid, Button, Divider } from "@mui/material";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import data from "../data.json";
 import { Loadmore } from "./loadmore";
 function Deal() {
@@ -106,12 +107,15 @@ function Deal() {
             >
               {filterData.slice(0, visibleData).map((item, index) => (
                 <Grid item key={index} xs={3}>
-                  <img
-                    src={item.path}
-                    alt={`${item.id}`}
-                    width="100%"
-                    height="auto"
-                  ></img>
+                  <Link to={`/product/${item.id}`}>
+                    <img
+                      src={item.path}
+                      alt={`${item.id}`}
+                      width="100%"
+                      height="auto"
+                    ></img>
+                  </Link>
+
                   <div
                     style={{
                       display: "flex",

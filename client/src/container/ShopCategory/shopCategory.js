@@ -3,6 +3,7 @@ import "../ShopCategory/shopCategory.css";
 import { Shopcontext } from "../../context/context";
 import { Box, Grid, Typography, Button } from "@mui/material";
 import { Loadmore } from "../../components/loadmore";
+import { Link } from "react-router-dom";
 
 export const ShopCategory = ({ category, banner }) => {
   const { data } = useContext(Shopcontext);
@@ -19,10 +20,10 @@ export const ShopCategory = ({ category, banner }) => {
           variant="h2"
           className="shop-category-text"
           style={{
-            left: category == "women" ? "40%" : "60%",
+            left: category === "women" ? "40%" : "60%",
             fontFamily: "Montserrat, sans-serif",
             transform:
-              category == "women"
+              category === "women"
                 ? "translate(-90%, -50%)"
                 : "translate(-10%, -50%)",
           }}
@@ -56,12 +57,14 @@ export const ShopCategory = ({ category, banner }) => {
           >
             {filterData.slice(0, visibleData).map((item, index) => (
               <Grid item key={index} xs={3}>
-                <img
-                  src={item.path}
-                  alt={`${item.id}`}
-                  width="100%"
-                  height="auto"
-                ></img>
+                <Link to={`/product/${item.id}`}>
+                  <img
+                    src={item.path}
+                    alt={`${item.id}`}
+                    width="100%"
+                    height="auto"
+                  ></img>
+                </Link>
                 <div
                   style={{
                     display: "flex",

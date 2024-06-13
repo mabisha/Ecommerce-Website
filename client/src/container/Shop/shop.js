@@ -1,5 +1,6 @@
-import { Box, Grid, Typography, Button, Pagination } from "@mui/material";
+import { Box, Grid, Typography, Pagination } from "@mui/material";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import data from "../../data.json";
 export const Shop = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -21,12 +22,14 @@ export const Shop = () => {
       >
         {currentItems.map((item, index) => (
           <Grid item key={index} xs={3}>
-            <img
-              src={item.path}
-              alt={`${item.id}`}
-              width="100%"
-              height="auto"
-            ></img>
+            <Link to={`/product/${item.id}`}>
+              <img
+                src={item.path}
+                alt={`${item.id}`}
+                width="100%"
+                height="auto"
+              ></img>
+            </Link>
             <div
               style={{
                 display: "flex",
