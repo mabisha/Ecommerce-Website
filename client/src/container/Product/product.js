@@ -2,11 +2,13 @@ import React, { useContext } from "react";
 import { Shopcontext } from "../../context/context";
 import { useParams } from "react-router-dom";
 import { Box, Grid, Typography } from "@mui/material";
+import StarIcon from "@mui/icons-material/Star";
 
 export const Product = () => {
   const { data } = useContext(Shopcontext);
   const { productId } = useParams();
   const product = data.find((item, index) => item.id === Number(productId));
+  const star = product.star;
   return (
     <Box m={4}>
       <Grid container justifyContent="center" spacing={2}>
@@ -18,7 +20,7 @@ export const Product = () => {
                 alt={`${product.id}`}
                 width="140px"
                 height="auto"
-              ></img>
+              />
             </Grid>
 
             <Grid item>
@@ -27,7 +29,7 @@ export const Product = () => {
                 alt={`${product.id}`}
                 width="140px"
                 height="auto"
-              ></img>
+              />
             </Grid>
             <Grid item>
               <img
@@ -35,7 +37,7 @@ export const Product = () => {
                 alt={`${product.id}`}
                 width="140px"
                 height="auto"
-              ></img>
+              />
             </Grid>
           </Grid>
         </Grid>
@@ -45,7 +47,7 @@ export const Product = () => {
             alt={`${product.id}`}
             width="450px"
             height="auto"
-          ></img>
+          />
         </Grid>
         <Grid item>
           <Grid
@@ -97,6 +99,16 @@ export const Product = () => {
                   }}
                 >{`$${product["new-price"]}`}</Typography>
               )}
+            </Grid>
+            <Grid item>
+              <div style={{ display: "flex", margin: "15px" }}>
+                {[...Array(product.star)].map((_, index) => (
+                  <StarIcon
+                    key={index}
+                    style={{ color: "#FFD700", margin: "0 5px 0 5px" }}
+                  />
+                ))}
+              </div>
             </Grid>
             <Grid item>
               <Typography

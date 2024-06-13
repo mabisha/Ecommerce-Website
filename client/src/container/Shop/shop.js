@@ -44,7 +44,7 @@ export const Shop = () => {
                   margin: "15px",
                 }}
               >
-                {item.desc}
+                {item.title}
               </Typography>
 
               {item["old-price"] ? (

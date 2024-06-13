@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import data from "../data.json";
 import { Loadmore } from "./loadmore";
+import StarIcon from "@mui/icons-material/Star";
+
 function Deal() {
   const [category, setCategory] = useState("best");
   const [active, setActive] = useState("best");
@@ -130,8 +132,16 @@ function Deal() {
                         margin: "15px",
                       }}
                     >
-                      {item.desc}
+                      {item.title}
                     </Typography>
+                    <div style={{ display: "flex", margin: "5px" }}>
+                      {[...Array(item.star)].map((_, index) => (
+                        <StarIcon
+                          key={index}
+                          style={{ color: "#FFD700", margin: "0 5px 0 5px" }}
+                        />
+                      ))}
+                    </div>
 
                     {item["old-price"] ? (
                       <div style={{ display: "inline-block" }}>

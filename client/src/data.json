@@ -6,7 +6,8 @@
         "new-price": 11.75,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
         "category": "men",
-        "title": "Men's Sale Outfit"
+        "title": "Men's Sale Outfit",
+        "star": 4
     },
     {
         "id": 2,
@@ -16,7 +17,8 @@
         "new-price": 20.00,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
         "category": "women",
-        "title": "Women's New Arrival"
+        "title": "Women's New Arrival",
+        "star": 5
     },
     {
         "id": 3,
@@ -26,7 +28,8 @@
         "new-price": 4.99,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
         "category": "men",
-        "title": "Men's Best Seller"
+        "title": "Men's Best Seller",
+        "star": 3
     },
     {
         "id": 4,
@@ -36,7 +39,8 @@
         "new-price": 11.19,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
         "category": "women",
-        "title": "Women's Sale Outfit"
+        "title": "Women's Sale Outfit",
+        "star": 4
     },
     {
         "id": 5,
@@ -45,7 +49,8 @@
         "old-price": 14.00,
         "new-price": 12.19,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
-        "title": "Women's New Arrival"
+        "title": "Women's New Arrival",
+        "star": 5
     },
     {
         "id": 6,
@@ -54,7 +59,8 @@
         "new-price": 10.00,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
         "category": "men",
-        "title": "Men's Best Seller"
+        "title": "Men's Best Seller",
+        "star": 4
     },
     {
         "id": 7,
@@ -64,7 +70,8 @@
         "new-price": 9.99,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. .",
         "category": "women",
-        "title": "Women's Sale Outfit"
+        "title": "Women's Sale Outfit",
+        "star": 3
     },
     {
         "id": 8,
@@ -73,7 +80,8 @@
         "new-price": 10.50,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
         "category": "men",
-        "title": "Men's New Arrival"
+        "title": "Men's New Arrival",
+        "star": 4
     },
     {
         "id": 9,
@@ -83,7 +91,8 @@
         "new-price": 13.00,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.,",
         "category": "women",
-        "title": "Women's Best Seller"
+        "title": "Women's Best Seller",
+        "star": 5
     },
     {
         "id": 10,
@@ -92,7 +101,8 @@
         "new-price": 11.75,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
         "category": "men",
-        "title": "Men's Sale Outfit"
+        "title": "Men's Sale Outfit",
+        "star": 4
     },
     {
         "id": 11,
@@ -102,7 +112,8 @@
         "new-price": 20.00,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur., ",
         "category": "men",
-        "title": "Men's New Arrival"
+        "title": "Men's New Arrival",
+        "star": 5
     },
     {
         "id": 12,
@@ -112,7 +123,8 @@
         "new-price": 4.99,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
         "category": "kids",
-        "title": "Kids' Best Seller"
+        "title": "Kids' Best Seller",
+        "star": 3
     },
     {
         "id": 13,
@@ -122,7 +134,8 @@
         "new-price": 4.99,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
         "category": "kids",
-        "title": "Kids' Best Seller"
+        "title": "Kids' Best Seller",
+        "star": 4
     },
     {
         "id": 14,
@@ -132,7 +145,8 @@
         "new-price": 11.19,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
         "category": "kids",
-        "title": "Kids' Sale Outfit"
+        "title": "Kids' Sale Outfit",
+        "star": 5
     },
     {
         "id": 15,
@@ -142,7 +156,8 @@
         "new-price": 12.19,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur., ",
         "category": "kids",
-        "title": "Kids' New Arrival"
+        "title": "Kids' New Arrival",
+        "star": 4
     },
     {
         "id": 16,
@@ -151,7 +166,8 @@
         "new-price": 10.00,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
         "category": "kids",
-        "title": "Kids' Best Seller"
+        "title": "Kids' Best Seller",
+        "star": 5
     },
     {
         "id": 17,
@@ -161,7 +177,8 @@
         "new-price": 9.99,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
         "category": "kids",
-        "title": "Kids' Sale Outfit"
+        "title": "Kids' Sale Outfit",
+        "star": 3
     },
     {
         "id": 18,
@@ -170,7 +187,8 @@
         "new-price": 10.50,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur., ",
         "category": "kids",
-        "title": "Kids' New Arrival"
+        "title": "Kids' New Arrival",
+        "star": 4
     },
     {
         "id": 19,
@@ -180,7 +198,8 @@
         "new-price": 13.00,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
         "category": "kids",
-        "title": "Kids' Best Seller"
+        "title": "Kids' Best Seller",
+        "star": 5
     },
     {
         "id": 20,
@@ -190,7 +209,8 @@
         "new-price": 20.00,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
         "category": "women",
-        "title": "Women's New Arrival"
+        "title": "Women's New Arrival",
+        "star": 5
     },
     {
         "id": 21,
@@ -200,7 +220,8 @@
         "new-price": 20.00,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur..",
         "category": "women",
-        "title": "Women's New Arrival"
+        "title": "Women's New Arrival",
+        "star": 4
     },
     {
         "id": 22,
@@ -210,7 +231,8 @@
         "new-price": 20.00,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
         "category": "women",
-        "title": "Women's New Arrival"
+        "title": "Women's New Arrival",
+        "star": 5
     },
     {
         "id": 23,
@@ -220,7 +242,8 @@
         "new-price": 4.99,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur., a best seller among women. Affordable and fashionable.",
         "category": "women",
-        "title": "Women's Best Seller"
+        "title": "Women's Best Seller",
+        "star": 4
     },
     {
         "id": 24,
@@ -230,7 +253,8 @@
         "new-price": 11.19,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
         "category": "women",
-        "title": "Women's Sale Outfit"
+        "title": "Women's Sale Outfit",
+        "star": 3
     },
     {
         "id": 25,
@@ -240,7 +264,8 @@
         "new-price": 12.19,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
         "category": "men",
-        "title": "Men's New Arrival"
+        "title": "Men's New Arrival",
+        "star": 4
     },
     {
         "id": 26,
@@ -249,7 +274,8 @@
         "new-price": 10.00,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.,",
         "category": "men",
-        "title": "Men's New Arrival"
+        "title": "Men's New Arrival",
+        "star": 5
     },
     {
         "id": 27,
@@ -259,6 +285,7 @@
         "new-price": 9.99,
         "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
         "category": "kids",
-        "title": "Kids' Sale Outfit"
+        "title": "Kids' Sale Outfit",
+        "star": 4
     }
 ]
