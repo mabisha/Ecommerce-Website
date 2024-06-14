@@ -61,7 +61,7 @@ export const Product = () => {
               <Typography
                 variant="h5"
                 style={{
-                  margin: "15px",
+                  margin: "5px 15px 5px 15px",
                   fontFamily: "Montserrat, sans-serif",
                 }}
               >
@@ -82,7 +82,7 @@ export const Product = () => {
                     variant="p"
                     style={{
                       fontWeight: "500",
-                      margin: "15px",
+                      margin: "5px 15px 5px 15px",
                       color: "#FE5252",
                       fontSize: "30px",
                     }}
@@ -93,7 +93,7 @@ export const Product = () => {
                   variant="p"
                   style={{
                     fontWeight: "500",
-                    margin: "15px",
+                    margin: "5px 15px 5px 15px",
                     color: "#FE5252",
                     fontSize: "30px",
                   }}
@@ -101,7 +101,7 @@ export const Product = () => {
               )}
             </Grid>
             <Grid item>
-              <div style={{ display: "flex", margin: "15px" }}>
+              <div style={{ display: "flex", margin: "5px 15px 5px 15px" }}>
                 {[...Array(product.star)].map((_, index) => (
                   <StarIcon
                     key={index}
@@ -114,7 +114,7 @@ export const Product = () => {
               <Typography
                 variant="body1"
                 style={{
-                  margin: "15px",
+                  margin: "5px 15px 5px 15px",
                   width: "400px",
                   fontFamily: "Montserrat, sans-serif",
                   fontSize: "14px",
@@ -122,6 +122,119 @@ export const Product = () => {
               >
                 {product.desc}
               </Typography>
+            </Grid>
+            <Grid item style={{ margin: "5px 15px 5px 15px" }}>
+              <Typography
+                variant="body1"
+                style={{
+                  margin: "0px 5px 0px 5px",
+                  fontWeight: "500",
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "18px",
+                }}
+              >
+                Size
+              </Typography>
+              <Grid container>
+                <Grid
+                  item
+                  style={{
+                    backgroundColor: "#eaeaea",
+                    margin: "5px 0px 10px 5px",
+                    borderRadius: "2px",
+                  }}
+                >
+                  <Typography
+                    variant="body1"
+                    style={{
+                      padding: "15px",
+
+                      fontFamily: "Montserrat, sans-serif",
+                      fontSize: "14px",
+                    }}
+                  >
+                    XS
+                  </Typography>
+                </Grid>
+                <Grid
+                  item
+                  style={{
+                    backgroundColor: "#eaeaea",
+                    margin: "5px 0px 10px 5px",
+                    borderRadius: "2px",
+                  }}
+                >
+                  <Typography
+                    variant="body1"
+                    style={{
+                      padding: "15px",
+                      fontFamily: "Montserrat, sans-serif",
+                      fontSize: "14px",
+                    }}
+                  >
+                    S
+                  </Typography>
+                </Grid>
+                <Grid
+                  item
+                  style={{
+                    backgroundColor: "#eaeaea",
+                    margin: "5px 0px 10px 5px",
+                    borderRadius: "2px",
+                  }}
+                >
+                  <Typography
+                    variant="body1"
+                    style={{
+                      padding: "15px",
+                      fontFamily: "Montserrat, sans-serif",
+                      fontSize: "14px",
+                    }}
+                  >
+                    M
+                  </Typography>
+                </Grid>
+                <Grid
+                  item
+                  style={{
+                    backgroundColor: "#eaeaea",
+                    margin: "5px 0px 10px 5px",
+                    borderRadius: "2px",
+                  }}
+                >
+                  <Typography
+                    variant="body1"
+                    style={{
+                      padding: "15px",
+
+                      fontFamily: "Montserrat, sans-serif",
+                      fontSize: "14px",
+                    }}
+                  >
+                    L
+                  </Typography>
+                </Grid>
+                <Grid
+                  item
+                  style={{
+                    backgroundColor: "#eaeaea",
+                    margin: "5px 0px 10px 5px",
+                    borderRadius: "2px",
+                  }}
+                >
+                  <Typography
+                    variant="body1"
+                    style={{
+                      padding: "15px",
+
+                      fontFamily: "Montserrat, sans-serif",
+                      fontSize: "14px",
+                    }}
+                  >
+                    XL
+                  </Typography>
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
