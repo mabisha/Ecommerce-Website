@@ -87,21 +87,6 @@ function Footer() {
                 About Us
               </Link>
             </Typography>
-            <Typography
-              variant="h6"
-              style={{
-                fontFamily: "Montserrat, sans-serif",
-                fontSize: "15px",
-                margin: "10px",
-              }}
-            >
-              <Link
-                style={{ textDecoration: "none", color: "#757575" }}
-                to="/blog"
-              >
-                Blog
-              </Link>
-            </Typography>
           </Grid>
           <Grid item>
             <Typography
