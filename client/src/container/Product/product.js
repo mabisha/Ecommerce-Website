@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
 import { Shopcontext } from "../../context/context";
 import { useParams } from "react-router-dom";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
+import { Star } from "../../components/star";
+import { ProductDesc } from "../../components/productdesc";
 
 export const Product = () => {
   const { data } = useContext(Shopcontext);
@@ -11,7 +13,7 @@ export const Product = () => {
   const star = product.star;
   return (
     <Box m={4}>
-      <Grid container justifyContent="center" spacing={2}>
+      <Grid container spacing={2} style={{ margin: "15px" }}>
         <Grid item>
           <Grid container direction="column" spacing={2}>
             <Grid item>
@@ -54,7 +56,7 @@ export const Product = () => {
             container
             direction="column"
             justifyContent="center"
-            spacing={4}
+            spacing={2}
             flexWrap="wrap"
           >
             <Grid item>
@@ -101,21 +103,14 @@ export const Product = () => {
               )}
             </Grid>
             <Grid item>
-              <div style={{ display: "flex", margin: "5px 15px 5px 15px" }}>
-                {[...Array(product.star)].map((_, index) => (
-                  <StarIcon
-                    key={index}
-                    style={{ color: "#FFD700", margin: "0 5px 0 5px" }}
-                  />
-                ))}
-              </div>
+              <Star item={product}></Star>
             </Grid>
             <Grid item>
               <Typography
                 variant="body1"
                 style={{
                   margin: "5px 15px 5px 15px",
-                  width: "400px",
+                  width: "500px",
                   fontFamily: "Montserrat, sans-serif",
                   fontSize: "14px",
                 }}
@@ -123,7 +118,7 @@ export const Product = () => {
                 {product.desc}
               </Typography>
             </Grid>
-            <Grid item style={{ margin: "5px 15px 5px 15px" }}>
+            <Grid item style={{ margin: "5px 15px 0px 15px" }}>
               <Typography
                 variant="body1"
                 style={{
@@ -236,9 +231,43 @@ export const Product = () => {
                 </Grid>
               </Grid>
             </Grid>
+            <Grid item style={{ margin: "5px 15px 10px 15px" }}>
+              <Button
+                style={{
+                  backgroundColor: "black",
+                  color: "white",
+                  padding: "15px",
+                }}
+              >
+                ADD TO CART
+              </Button>
+            </Grid>
+            <Grid item style={{ margin: "5px 15px 10px 15px" }}>
+              <Typography
+                variant="body1"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "15px",
+                }}
+              >
+                Categories:<span> fashion jacket</span>
+              </Typography>
+            </Grid>
+            <Grid item style={{ margin: "0px 15px 0px 15px" }}>
+              <Typography
+                variant="body1"
+                style={{
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "15px",
+                }}
+              >
+                Tags:<span> latest mordern</span>
+              </Typography>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
+      <ProductDesc></ProductDesc>
     </Box>
   );
 };

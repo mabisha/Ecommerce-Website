@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import data from "../data.json";
 import { Loadmore } from "./loadmore";
 import StarIcon from "@mui/icons-material/Star";
+import { Star } from "./star";
 
 function Deal() {
   const [category, setCategory] = useState("best");
@@ -134,15 +135,7 @@ function Deal() {
                     >
                       {item.title}
                     </Typography>
-                    <div style={{ display: "flex", margin: "5px" }}>
-                      {[...Array(item.star)].map((_, index) => (
-                        <StarIcon
-                          key={index}
-                          style={{ color: "#FFD700", margin: "0 5px 0 5px" }}
-                        />
-                      ))}
-                    </div>
-
+                    <Star item={item}></Star>
                     {item["old-price"] ? (
                       <div style={{ display: "inline-block" }}>
                         <span

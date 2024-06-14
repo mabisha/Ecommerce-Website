@@ -4,6 +4,7 @@ import { Shopcontext } from "../../context/context";
 import { Box, Grid, Typography, Button } from "@mui/material";
 import { Loadmore } from "../../components/loadmore";
 import { Link } from "react-router-dom";
+import { Star } from "../../components/star";
 
 export const ShopCategory = ({ category, banner }) => {
   const { data } = useContext(Shopcontext);
@@ -79,9 +80,9 @@ export const ShopCategory = ({ category, banner }) => {
                       margin: "15px",
                     }}
                   >
-                    {item.desc}
+                    {item.title}
                   </Typography>
-
+                  <Star item={item}></Star>
                   {item["old-price"] ? (
                     <div style={{ display: "inline-block" }}>
                       <span
