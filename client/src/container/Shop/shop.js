@@ -1,7 +1,7 @@
 import { Box, Grid, Typography, Pagination } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import data from "../../data.json";
+import data from "../../assets/data.json";
 export const Shop = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 4;
@@ -28,6 +28,7 @@ export const Shop = () => {
                 alt={`${item.id}`}
                 width="100%"
                 height="auto"
+                onClick={window.scrollTo(0, 0)}
               ></img>
             </Link>
             <div

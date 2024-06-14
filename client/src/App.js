@@ -44,7 +44,7 @@ const AppContent = ({ menu, setMenu }) => {
     } else {
       setMenu("");
     }
-  }, [location]);
+  }, [location.pathname, setMenu]);
 
   return (
     <>
@@ -89,7 +89,7 @@ const AppContent = ({ menu, setMenu }) => {
               style={{
                 marginRight: "20px",
                 cursor: "pointer",
-                color: menu == "Login" ? "#b469fa" : "black",
+                color: menu === "Login" ? "#b469fa" : "black",
               }}
             />
           </Link>
@@ -106,7 +106,7 @@ const AppContent = ({ menu, setMenu }) => {
                 style={{
                   marginRight: "10px",
                   cursor: "pointer",
-                  color: menu == "Cart" ? "#b469fa" : "black",
+                  color: menu === "Cart" ? "#b469fa" : "black",
                 }}
               />
             </Link>

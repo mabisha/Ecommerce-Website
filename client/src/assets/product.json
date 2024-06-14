@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "path": "../images/1.jpg",
+        "type": "sale",
+        "new-price": 11.75,
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
+        "category": "men",
+        "title": "Men's Sale Outfit",
+        "star": 4
+    },
+    {
+        "id": 2,
+        "path": "../images/2.jpg",
+        "type": "new",
+        "old-price": 23.00,
+        "new-price": 20.00,
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
+        "category": "women",
+        "title": "Women's New Arrival",
+        "star": 5
+    },
+    {
+        "id": 3,
+        "path": "../images/3.jpg",
+        "type": "best",
+        "old-price": 9.50,
+        "new-price": 4.99,
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. ",
+        "category": "men",
+        "title": "Men's Best Seller",
+        "star": 3
+    },
+    {
+        "id": 4,
+        "path": "../images/4.jpg",
+        "type": "sale",
+        "old-price": 13.50,
+        "new-price": 11.19,
+        "desc": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        "category": "women",
+        "title": "Women's Sale Outfit",
+        "star": 4
+    }
+      
+    ]

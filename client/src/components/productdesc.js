@@ -7,7 +7,7 @@ export const ProductDesc = () => {
     setValue(newValue);
   };
   return (
-    <Grid container style={{ margin: "15px" }} spacing={2}>
+    <Grid container spacing={2}>
       <Grid item xs={12}>
         <Tabs
           value={value}
@@ -15,7 +15,7 @@ export const ProductDesc = () => {
           centered
           TabIndicatorProps={{
             style: {
-              backgroundColor: "black", // Change this to your desired color for the underline
+              backgroundColor: "black",
             },
           }}
         >
@@ -55,7 +55,7 @@ export const ProductDesc = () => {
           </Grid>
         </Grid> */}
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={12} style={{ margin: "40px" }}>
         <TabPanel value={value} index={0}>
           <Typography
             variant="body1"
@@ -97,5 +97,5 @@ export const ProductDesc = () => {
 function TabPanel(props) {
   const { children, value, index } = props;
 
-  return <div> {value === index && <Box p={3}>{children}</Box>}</div>;
+  return <div> {value === index && <Box>{children}</Box>}</div>;
 }

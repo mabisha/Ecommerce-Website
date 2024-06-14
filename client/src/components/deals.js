@@ -2,9 +2,8 @@ import { Typography } from "@mui/material";
 import { Box, Grid, Button, Divider } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import data from "../data.json";
+import data from "../assets/data.json";
 import { Loadmore } from "./loadmore";
-import StarIcon from "@mui/icons-material/Star";
 import { Star } from "./star";
 
 function Deal() {
@@ -116,6 +115,7 @@ function Deal() {
                       alt={`${item.id}`}
                       width="100%"
                       height="auto"
+                      onClick={window.scrollTo(0, 0)}
                     ></img>
                   </Link>
 

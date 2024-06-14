@@ -2,18 +2,17 @@ import React, { useContext } from "react";
 import { Shopcontext } from "../../context/context";
 import { useParams } from "react-router-dom";
 import { Box, Button, Grid, Typography } from "@mui/material";
-import StarIcon from "@mui/icons-material/Star";
 import { Star } from "../../components/star";
 import { ProductDesc } from "../../components/productdesc";
+import { RelatedProduct } from "../../components/relatedproduct";
 
 export const Product = () => {
   const { data } = useContext(Shopcontext);
   const { productId } = useParams();
   const product = data.find((item, index) => item.id === Number(productId));
-  const star = product.star;
   return (
-    <Box m={4}>
-      <Grid container spacing={2} style={{ margin: "15px" }}>
+    <Box>
+      <Grid container spacing={2} style={{ margin: "40px" }}>
         <Grid item>
           <Grid container direction="column" spacing={2}>
             <Grid item>
@@ -65,6 +64,7 @@ export const Product = () => {
                 style={{
                   margin: "5px 15px 5px 15px",
                   fontFamily: "Montserrat, sans-serif",
+                  fontWeight: "500",
                 }}
               >
                 {product.title}
@@ -268,6 +268,7 @@ export const Product = () => {
         </Grid>
       </Grid>
       <ProductDesc></ProductDesc>
+      <RelatedProduct></RelatedProduct>
     </Box>
   );
 };
