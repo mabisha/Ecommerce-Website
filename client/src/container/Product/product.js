@@ -7,7 +7,7 @@ import { ProductDesc } from "../../components/productdesc";
 import { RelatedProduct } from "../../components/relatedproduct";
 
 export const Product = () => {
-  const { data } = useContext(Shopcontext);
+  const { data, addToCart } = useContext(Shopcontext);
   const { productId } = useParams();
   const product = data.find((item, index) => item.id === Number(productId));
   return (
@@ -237,6 +237,9 @@ export const Product = () => {
                   backgroundColor: "black",
                   color: "white",
                   padding: "15px",
+                }}
+                onClick={() => {
+                  addToCart(product.id);
                 }}
               >
                 ADD TO CART
