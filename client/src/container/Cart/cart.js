@@ -10,7 +10,7 @@ export const Cart = () => {
   const cartItems = data.find((item, index) => cartItem[item.id] > 0);
   console.log(cartItems);
   return (
-    <Box m={4}>
+    <Box mt={2} mr={4} ml={4}>
       {cartItems ? (
         <Grid container direction="column" spacing={2}>
           <Grid item>
@@ -122,6 +122,117 @@ export const Cart = () => {
               return null;
             }
           })}
+          <Grid item>
+            <Grid container>
+              <Grid item xs={4}>
+                <Typography
+                  variant="h6"
+                  style={{
+                    fontFamily: "Montserrat, sans-serif",
+                  }}
+                >
+                  Cart Totals
+                </Typography>
+                <Box
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="space-between"
+                  mt={2}
+                  gap={20}
+                >
+                  <Typography
+                    variant="body2"
+                    style={{
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
+                  >
+                    Sub Total
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    style={{
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
+                  >
+                    $
+                  </Typography>
+                </Box>
+                <hr />
+                <Box
+                  display="flex"
+                  alignItems="center"
+                  mt={2}
+                  gap={20}
+                  justifyContent="space-between"
+                >
+                  <Typography
+                    variant="body2"
+                    style={{
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
+                  >
+                    Shipping Charge
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    style={{
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
+                  >
+                    Free
+                  </Typography>
+                </Box>
+                <hr />
+                <Box
+                  display="flex"
+                  alignItems="center"
+                  mt={2}
+                  gap={20}
+                  justifyContent="space-between"
+                >
+                  <Typography
+                    variant="body2"
+                    style={{
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
+                  >
+                    Total
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    style={{
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
+                  >
+                    $
+                  </Typography>
+                </Box>
+                <Box display="flex" justifyContent="space-between" mt={5}>
+                  <Button
+                    style={{
+                      backgroundColor: "black",
+                      color: "white",
+                      padding: "12px",
+                    }}
+                  >
+                    CHECKOUT
+                  </Button>
+                  <Link to="/shop" style={{ textDecoration: "none" }}>
+                    <Button
+                      style={{
+                        backgroundColor: "black",
+                        color: "white",
+                        padding: "12px",
+                      }}
+                    >
+                      CONTINUE TO SHOP
+                    </Button>
+                  </Link>
+                </Box>
+              </Grid>
+              <Grid item></Grid>
+            </Grid>
+          </Grid>
         </Grid>
       ) : (
         <Grid
