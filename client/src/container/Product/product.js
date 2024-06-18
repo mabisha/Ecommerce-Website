@@ -71,7 +71,7 @@ export const Product = () => {
               </Typography>
             </Grid>
             <Grid item>
-              {product["old-price"] ? (
+              {product["oldPrice"] ? (
                 <div style={{ display: "inline-block" }}>
                   <span
                     style={{
@@ -79,7 +79,7 @@ export const Product = () => {
                       margin: "0 15px 0 15px",
                       fontSize: "30px",
                     }}
-                  >{`$${product["old-price"]}`}</span>
+                  >{`$${product["oldPrice"]}`}</span>
                   <Typography
                     variant="p"
                     style={{
@@ -88,7 +88,7 @@ export const Product = () => {
                       color: "#FE5252",
                       fontSize: "30px",
                     }}
-                  >{`$${product["new-price"]}`}</Typography>
+                  >{`$${product["newPrice"]}`}</Typography>
                 </div>
               ) : (
                 <Typography
@@ -99,7 +99,7 @@ export const Product = () => {
                     color: "#FE5252",
                     fontSize: "30px",
                   }}
-                >{`$${product["new-price"]}`}</Typography>
+                >{`$${product["newPrice"]}`}</Typography>
               )}
             </Grid>
             <Grid item>

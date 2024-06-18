@@ -136,20 +136,20 @@ function Deal() {
                       {item.title}
                     </Typography>
                     <Star item={item}></Star>
-                    {item["old-price"] ? (
+                    {item["oldPrice"] ? (
                       <div style={{ display: "inline-block" }}>
                         <span
                           style={{
                             textDecoration: "line-through",
                             margin: "0 15px 0 15px ",
                           }}
-                        >{`$${item["old-price"]}`}</span>
+                        >{`$${item["oldPrice"]}`}</span>
                         <Typography
                           variant="p"
                           style={{
                             fontWeight: "500",
                           }}
-                        >{`$${item["new-price"]}`}</Typography>
+                        >{`$${item["newPrice"]}`}</Typography>
                       </div>
                     ) : (
                       <Typography
@@ -157,7 +157,7 @@ function Deal() {
                         style={{
                           fontWeight: "500",
                         }}
-                      >{`$${item["new-price"]}`}</Typography>
+                      >{`$${item["newPrice"]}`}</Typography>
                     )}
                   </div>
                 </Grid>
