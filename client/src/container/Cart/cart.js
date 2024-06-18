@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 import { Shopcontext } from "../../context/context";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import LocalGroceryStoreOutlinedIcon from "@mui/icons-material/LocalGroceryStoreOutlined";
 import { Link } from "react-router-dom";
 
 export const Cart = () => {
-  const { data, cartItem, removeFromCart } = useContext(Shopcontext);
+  const { data, cartItem, removeFromCart, getTotalCartAmount } =
+    useContext(Shopcontext);
   const cartItems = data.find((item, index) => cartItem[item.id] > 0);
   console.log(cartItems);
   return (
@@ -123,7 +124,7 @@ export const Cart = () => {
             }
           })}
           <Grid item>
-            <Grid container>
+            <Grid container spacing={4}>
               <Grid item xs={4}>
                 <Typography
                   variant="h6"
@@ -154,7 +155,7 @@ export const Cart = () => {
                       fontFamily: "Montserrat, sans-serif",
                     }}
                   >
-                    $
+                    ${getTotalCartAmount()}
                   </Typography>
                 </Box>
                 <hr />
@@ -204,7 +205,7 @@ export const Cart = () => {
                       fontFamily: "Montserrat, sans-serif",
                     }}
                   >
-                    $
+                    ${getTotalCartAmount()}
                   </Typography>
                 </Box>
                 <Box display="flex" justifyContent="space-between" mt={5}>
@@ -230,7 +231,36 @@ export const Cart = () => {
                   </Link>
                 </Box>
               </Grid>
-              <Grid item></Grid>
+              <Grid item xs={8}>
+                <Box
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+                  flexDirection="column"
+                  gap={4}
+                >
+                  <Typography
+                    variant="body1"
+                    style={{
+                      fontFamily: "Montserrat, sans-serif",
+                    }}
+                  >
+                    If you have a promo code add here
+                  </Typography>
+                  <Box display="flex" justifyContent="center">
+                    <TextField type="text" variant="outlined" />
+                    <Button
+                      style={{
+                        backgroundColor: "black",
+                        color: "white",
+                        padding: "12px",
+                      }}
+                    >
+                      Submit
+                    </Button>
+                  </Box>
+                </Box>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
@@ -241,6 +271,7 @@ export const Cart = () => {
           alignItems="center"
           direction="column"
           spacing={3}
+          mb={4}
         >
           <Grid item>
             <LocalGroceryStoreOutlinedIcon

@@ -19,9 +19,12 @@ import { Login } from "./container/Login/login";
 import Footer from "./components/footer";
 import { Register } from "./container/Register/register";
 import { Product } from "./container/Product/product";
+import { useContext } from "react";
+import { Shopcontext } from "./context/context";
 
 const AppContent = ({ menu, setMenu }) => {
   const location = useLocation();
+  const { getTotalCartItems } = useContext(Shopcontext);
 
   useEffect(() => {
     const path = location.pathname;
@@ -111,7 +114,7 @@ const AppContent = ({ menu, setMenu }) => {
               />
             </Link>
 
-            <div className="shop-cart-counter">0</div>
+            <div className="shop-cart-counter">{getTotalCartItems()}</div>
           </div>
         </div>
       </div>
