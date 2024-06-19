@@ -1,18 +1,20 @@
-const port = 4000;
+const PORT = process.env.PORT || 4000;
 const express = require("express");
 const cors = require("cors");
-const pg = require("pg");
 const jwt = require("jsonwebtoken");
-const multer = require("multer");
 const path = require("path");
 const app = express();
 
-app.use(express.json()); // all the request will be parsed to json
-app.use(cors()); // will coonect out app to the port
+const userRouter = require("./routes/user");
+app.use(express.json()); // All requests will be parsed to JSON
+app.use(cors()); // Enable CORS
 
 app.get("/", (req, res) => {
   res.send("Express App is running");
 });
-app.listen(port, () => {
-  console.log(`Server is running on ${port}`);
+
+app.use("/", userRouter);
+
+app.listen(PORT, () => {
+  console.log(`Server is running on ${PORT}`);
 });
