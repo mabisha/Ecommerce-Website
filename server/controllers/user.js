@@ -5,19 +5,22 @@ const jwt = require("jsonwebtoken");
 module.exports = {
   async createUser(req, res) {
     const { username, password, email } = req.body;
-    let check = await User.findOne({ email: email });
-    if (check) {
-      return res.status(400).json({
-        success: false,
-        errors: "Existing user found with same email address",
-      });
-    }
-    let cart = {};
-    for (let i = 0; i < 30; i++) {
-      cart[i] = 0;
-    }
     try {
-      // Create the new user
+      let check = await User.findOne({
+        where: {
+          email: email,
+        },
+      });
+      if (check) {
+        return res.status(400).json({
+          success: false,
+          errors: "Existing user found with same email address",
+        });
+      }
+      let cart = {};
+      for (let i = 0; i < 30; i++) {
+        cart[i] = 0;
+      }
       const newUser = await User.create({
         name: username,
         password: password,
@@ -32,7 +35,6 @@ module.exports = {
       const token = jwt.sign(data, "secret_ecom");
       return res.status(200).json({ success: true, token: token });
     } catch (error) {
-      // Handle possible errors (e.g., validation errors, unique constraint errors)
       return res.status(500).json({
         error: "An error occurred while creating the user.",
         details: error.message,
@@ -41,10 +43,20 @@ module.exports = {
   },
   async loginUser(req, res) {
     const { email, password } = req.body;
-    let user = await User.findOne({ email: email });
-    if (user) {
-      const passCompare = password === user.password;
-      if (passCompare) {
+    try {
+      let user = await User.findOne({
+        where: {
+          email: email,
+        },
+      });
+      if (!user) {
+        return res
+          .status(400)
+          .json({ success: false, errors: "Invalid email" });
+      }
+
+      // Compare passwords (assuming plain text storage, not recommended for production)
+      if (password === user.password) {
         const data = {
           user: {
             id: user.id,
@@ -55,10 +67,13 @@ module.exports = {
       } else {
         return res
           .status(400)
-          .json({ success: false, errors: "wrong password" });
+          .json({ success: false, errors: "Wrong password" });
       }
-    } else {
-      return res.status(400).json({ success: false, errors: "wrong email id" });
+    } catch (error) {
+      return res.status(500).json({
+        error: "An error occurred while logging in.",
+        details: error.message,
+      });
     }
   },
 };

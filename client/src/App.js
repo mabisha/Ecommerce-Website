@@ -11,6 +11,7 @@ import Home from "./container/Home/home";
 import Contact from "./container/Contact/contact";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import LogoutIcon from "@mui/icons-material/Logout";
 import "./App.css";
 import { Shop } from "./container/Shop/shop";
 import { ShopCategory } from "./container/ShopCategory/shopCategory";
@@ -81,21 +82,41 @@ const AppContent = ({ menu, setMenu }) => {
             alignItems: "center",
           }}
         >
-          <Link
-            to="/login"
-            style={{
-              textDecoration: "none",
-            }}
-            onClick={() => setMenu("Login")}
-          >
-            <AccountCircleOutlinedIcon
+          {localStorage.getItem("auth-token") ? (
+            <Link
+              to="/login"
               style={{
-                marginRight: "20px",
-                cursor: "pointer",
-                color: menu === "Login" ? "#b469fa" : "black",
+                textDecoration: "none",
               }}
-            />
-          </Link>
+              onClick={() => {
+                localStorage.removeItem("auth-token");
+              }}
+            >
+              <LogoutIcon
+                style={{
+                  marginRight: "20px",
+                  cursor: "pointer",
+                  color: menu === "Logout" ? "#b469fa" : "black",
+                }}
+              />
+            </Link>
+          ) : (
+            <Link
+              to="/login"
+              style={{
+                textDecoration: "none",
+              }}
+              onClick={() => setMenu("Login")}
+            >
+              <AccountCircleOutlinedIcon
+                style={{
+                  marginRight: "20px",
+                  cursor: "pointer",
+                  color: menu === "Login" ? "#b469fa" : "black",
+                }}
+              />
+            </Link>
+          )}
 
           <div style={{ position: "relative" }}>
             <Link

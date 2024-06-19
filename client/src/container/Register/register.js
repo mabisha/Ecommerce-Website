@@ -1,9 +1,43 @@
 import { Box, Grid, TextField, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 
 export const Register = () => {
-  const handleSubmit = () => {};
+  const [formData, setFormData] = useState({
+    username: "",
+    password: "",
+    email: "",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:4000/api/signup", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const responseData = await response.json();
+
+      if (responseData.success) {
+        localStorage.setItem("auth-token", responseData.token);
+        window.location.replace("/login");
+      } else {
+        alert(responseData.errors);
+      }
+    } catch (error) {
+      console.error("Error during signup:", error.message);
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   return (
     <Box>
@@ -51,8 +85,8 @@ export const Register = () => {
             border: "1px solid black",
             margin: "40px",
             padding: "40px",
-            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // added box shadow here
-            borderRadius: "8px", // optional: adds rounded corners
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+            borderRadius: "8px",
           }}
         >
           <form onSubmit={handleSubmit}>
@@ -64,17 +98,33 @@ export const Register = () => {
               alignItems="center"
             >
               <Grid item>
-                <TextField label="Username" variant="outlined" />
+                <TextField
+                  label="Username"
+                  variant="outlined"
+                  name="username"
+                  value={formData.username}
+                  onChange={handleChange}
+                />
               </Grid>
               <Grid item>
                 <TextField
                   label="Password"
                   type="password"
                   variant="outlined"
+                  name="password"
+                  value={formData.password}
+                  onChange={handleChange}
                 />
               </Grid>
               <Grid item>
-                <TextField label="Email" type="email" variant="outlined" />
+                <TextField
+                  label="Email"
+                  type="email"
+                  variant="outlined"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
               </Grid>
               <Grid item>
                 <Button

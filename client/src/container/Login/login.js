@@ -1,9 +1,41 @@
 import { Box, Grid, TextField, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 
 export const Login = () => {
-  const handleSubmit = () => {};
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("login", formData);
+
+    try {
+      const response = await fetch("http://localhost:4000/api/login", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      const responseData = await response.json();
+      if (responseData.success) {
+        localStorage.setItem("auth-token", responseData.token);
+        window.location.replace("/");
+      } else {
+        alert(responseData.errors);
+      }
+    } catch (error) {
+      console.error("Error during login:", error.message);
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   return (
     <Box>
@@ -64,13 +96,23 @@ export const Login = () => {
               alignItems="center"
             >
               <Grid item>
-                <TextField label="Username" variant="outlined" />
+                <TextField
+                  label="Email"
+                  type="email"
+                  variant="outlined"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
               </Grid>
               <Grid item>
                 <TextField
                   label="Password"
                   type="password"
                   variant="outlined"
+                  name="password"
+                  value={formData.password}
+                  onChange={handleChange}
                 />
               </Grid>
               <Grid item>
