@@ -22,7 +22,7 @@ module.exports = {
       newPrice: {
         type: Sequelize.INTEGER,
       },
-      oldprice: {
+      oldPrice: {
         type: Sequelize.INTEGER,
       },
       title: {
@@ -35,7 +35,7 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       desc: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
       },
       createdAt: {
         allowNull: false,

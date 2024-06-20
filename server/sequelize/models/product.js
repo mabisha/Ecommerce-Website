@@ -20,11 +20,11 @@ module.exports = (sequelize, DataTypes) => {
       path: DataTypes.STRING,
       type: DataTypes.STRING,
       newPrice: DataTypes.INTEGER,
-      oldprice: DataTypes.INTEGER,
+      oldPrice: DataTypes.INTEGER,
       title: DataTypes.STRING,
       category: DataTypes.STRING,
       star: DataTypes.INTEGER,
-      desc: DataTypes.STRING,
+      desc: DataTypes.TEXT,
     },
     {
       sequelize,

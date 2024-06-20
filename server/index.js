@@ -5,6 +5,7 @@ const path = require("path");
 const app = express();
 
 const userRouter = require("./routes/user");
+const productRouter = require("./routes/product");
 app.use(express.json()); // All requests will be parsed to JSON
 app.use(cors()); // Enable CORS
 app.use("/images", express.static("upload/images"));
@@ -30,7 +31,7 @@ app.get("/", (req, res) => {
 //   });
 // });
 app.use("/", userRouter);
-
+app.use("/", productRouter);
 app.listen(PORT, () => {
   console.log(`Server is running on ${PORT}`);
 });
