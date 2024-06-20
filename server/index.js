@@ -7,21 +7,21 @@ const app = express();
 const userRouter = require("./routes/user");
 app.use(express.json()); // All requests will be parsed to JSON
 app.use(cors()); // Enable CORS
-
+app.use("/images", express.static("upload/images"));
 app.get("/", (req, res) => {
   res.send("Express App is running");
 });
-const multer = require("multer");
-const storage = multer.diskStorage({
-  destination: "./upload/images",
-  filename: (req, file, cb) => {
-    return cb(
-      null,
-      `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`
-    );
-  },
-});
-app.use("/images", express.static("upload/images"));
+//For uploading images
+// const multer = require("multer");
+// const storage = multer.diskStorage({
+//   destination: "./upload/images",
+//   filename: (req, file, cb) => {
+//     return cb(
+//       null,
+//       `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`
+//     );
+//   },
+// });
 // const upload = multer({ storage: storage });
 // app.post("/api/upload", upload.single("product"), (req, res) => {
 //   res.json({
