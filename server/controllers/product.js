@@ -1,5 +1,7 @@
+const { where } = require("sequelize");
 const db = require("../sequelize/models");
 const Product = db.Product;
+const User = db.User;
 
 module.exports = {
   addProduct: async (req, res) => {
@@ -87,6 +89,60 @@ module.exports = {
       res
         .status(500)
         .json({ success: false, errors: "Failed to retrieve products" });
+    }
+  },
+  addToCart: async (req, res) => {
+    try {
+      console.log("added", req.body.itemId);
+      let userData = await User.findOne({
+        where: {
+          id: req.user.id,
+        },
+      });
+      userData.cartData[req.body.itemId] += 1;
+      await User.update(
+        { cartData: userData.cartData },
+        {
+          where: {
+            id: req.user.id,
+          },
+        }
+      );
+      res.status(200).json({
+        success: true,
+        message: "Item added to cart",
+      });
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ success: false, errors: error });
+    }
+  },
+  removeFromCart: async (req, res) => {
+    try {
+      console.log("removed", req.body.itemId);
+      let userData = await User.findOne({
+        where: {
+          id: req.user.id,
+        },
+      });
+      if (userData.cartData[req.body.itemId] > 0) {
+        userData.cartData[req.body.itemId] -= 1;
+        await User.update(
+          { cartData: userData.cartData },
+          {
+            where: {
+              id: req.user.id,
+            },
+          }
+        );
+        res.status(200).json({
+          success: true,
+          message: "Item removed to cart",
+        });
+      }
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ success: false, errors: error });
     }
   },
 };
