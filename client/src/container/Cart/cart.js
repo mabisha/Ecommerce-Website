@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export const Cart = () => {
   const { data, cartItem, removeFromCart, getTotalCartAmount } =
     useContext(Shopcontext);
-  const cartItems = data.find((item, index) => cartItem[item.id] > 0);
+  const cartItems = data.find((item, index) => cartItem[item.product_id] > 0);
   console.log(cartItems);
   return (
     <Box mt={2} mr={4} ml={4}>
@@ -48,9 +48,9 @@ export const Cart = () => {
             </Grid>
           </Grid>
           {data.map((item, index) => {
-            if (cartItem[item.id] > 0) {
+            if (cartItem[item.product_id] > 0) {
               return (
-                <Grid item key={item.id}>
+                <Grid item key={item.product_id}>
                   <Grid
                     container
                     justifyContent="space-between"
@@ -92,7 +92,7 @@ export const Cart = () => {
                           border: "1px solid black",
                         }}
                       >
-                        {cartItem[item.id]}
+                        {cartItem[item.product_id]}
                       </Button>
                     </Grid>
                     <Grid item xs={2}>
@@ -102,13 +102,13 @@ export const Cart = () => {
                           fontFamily: "Montserrat, sans-serif",
                         }}
                       >
-                        ${item.newPrice * cartItem[item.id]}
+                        ${item.newPrice * cartItem[item.product_id]}
                       </Typography>
                     </Grid>
                     <Grid item xs={2}>
                       <DeleteForeverIcon
                         onClick={() => {
-                          removeFromCart(item.id);
+                          removeFromCart(item.product_id);
                         }}
                         style={{
                           cursor: "pointer",

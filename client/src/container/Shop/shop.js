@@ -22,10 +22,10 @@ export const Shop = () => {
       >
         {currentItems.map((item, index) => (
           <Grid item key={index} xs={3}>
-            <Link to={`/product/${item.id}`}>
+            <Link to={`/product/${item.product_id}`}>
               <img
                 src={item.path}
-                alt={`${item.id}`}
+                alt={`${item.product_id}`}
                 width="100%"
                 height="auto"
                 onClick={window.scrollTo(0, 0)}

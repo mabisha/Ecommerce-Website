@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "product_id": 1,
         "path": "../images/1.jpg",
         "type": "sale",
         "newPrice": 11.75,
@@ -10,7 +10,7 @@
         "star": 4
     },
     {
-        "id": 2,
+        "product_id": 2,
         "path": "../images/2.jpg",
         "type": "new",
         "oldPrice": 23.00,
@@ -21,7 +21,7 @@
         "star": 5
     },
     {
-        "id": 3,
+        "product_id": 3,
         "path": "../images/3.jpg",
         "type": "best",
         "oldPrice": 9.50,
@@ -32,7 +32,7 @@
         "star": 3
     },
     {
-        "id": 4,
+        "product_id": 4,
         "path": "../images/4.jpg",
         "type": "sale",
         "oldPrice": 13.50,
@@ -43,7 +43,7 @@
         "star": 4
     },
     {
-        "id": 5,
+        "product_id": 5,
         "path": "../images/5.jpg",
         "type": "new",
         "oldPrice": 14.00,
@@ -53,7 +53,7 @@
         "star": 5
     },
     {
-        "id": 6,
+        "product_id": 6,
         "path": "../images/6.jpg",
         "type": "best",
         "newPrice": 10.00,
@@ -63,7 +63,7 @@
         "star": 4
     },
     {
-        "id": 7,
+        "product_id": 7,
         "path": "../images/7.jpg",
         "type": "sale",
         "oldPrice": 12.75,
@@ -74,7 +74,7 @@
         "star": 3
     },
     {
-        "id": 8,
+        "product_id": 8,
         "path": "../images/8.jpg",
         "type": "new",
         "newPrice": 10.50,
@@ -84,7 +84,7 @@
         "star": 4
     },
     {
-        "id": 9,
+        "product_id": 9,
         "path": "../images/9.jpg",
         "type": "best",
         "oldPrice": 15.00,
@@ -95,7 +95,7 @@
         "star": 5
     },
     {
-        "id": 10,
+        "product_id": 10,
         "path": "../images/10.jpg",
         "type": "sale",
         "newPrice": 11.75,
@@ -105,7 +105,7 @@
         "star": 4
     },
     {
-        "id": 11,
+        "product_id": 11,
         "path": "../images/11.jpg",
         "type": "new",
         "oldPrice": 23.00,
@@ -116,7 +116,7 @@
         "star": 5
     },
     {
-        "id": 12,
+        "product_id": 12,
         "path": "../images/12.jpg",
         "type": "best",
         "oldPrice": 9.50,
@@ -127,7 +127,7 @@
         "star": 3
     },
     {
-        "id": 13,
+        "product_id": 13,
         "path": "../images/13.jpg",
         "type": "best",
         "oldPrice": 9.50,
@@ -138,7 +138,7 @@
         "star": 4
     },
     {
-        "id": 14,
+        "product_id": 14,
         "path": "../images/14.jpg",
         "type": "sale",
         "oldPrice": 13.50,
@@ -149,7 +149,7 @@
         "star": 5
     },
     {
-        "id": 15,
+        "product_id": 15,
         "path": "../images/15.jpg",
         "type": "new",
         "oldPrice": 14.00,
@@ -160,7 +160,7 @@
         "star": 4
     },
     {
-        "id": 16,
+        "product_id": 16,
         "path": "../images/16.jpg",
         "type": "best",
         "newPrice": 10.00,
@@ -170,7 +170,7 @@
         "star": 5
     },
     {
-        "id": 17,
+        "product_id": 17,
         "path": "../images/17.jpg",
         "type": "sale",
         "oldPrice": 12.75,
@@ -181,7 +181,7 @@
         "star": 3
     },
     {
-        "id": 18,
+        "product_id": 18,
         "path": "../images/18.jpg",
         "type": "new",
         "newPrice": 10.50,
@@ -191,7 +191,7 @@
         "star": 4
     },
     {
-        "id": 19,
+        "product_id": 19,
         "path": "../images/19.jpg",
         "type": "best",
         "oldPrice": 15.00,
@@ -202,7 +202,7 @@
         "star": 5
     },
     {
-        "id": 20,
+        "product_id": 20,
         "path": "../images/20.jpg",
         "type": "new",
         "oldPrice": 23.00,
@@ -213,7 +213,7 @@
         "star": 5
     },
     {
-        "id": 21,
+        "product_id": 21,
         "path": "../images/21.jpg",
         "type": "new",
         "oldPrice": 23.00,
@@ -224,7 +224,7 @@
         "star": 4
     },
     {
-        "id": 22,
+        "product_id": 22,
         "path": "../images/22.jpg",
         "type": "new",
         "oldPrice": 23.00,
@@ -235,7 +235,7 @@
         "star": 5
     },
     {
-        "id": 23,
+        "product_id": 23,
         "path": "../images/23.jpg",
         "type": "best",
         "oldPrice": 9.50,
@@ -246,7 +246,7 @@
         "star": 4
     },
     {
-        "id": 24,
+        "product_id": 24,
         "path": "../images/24.jpg",
         "type": "sale",
         "oldPrice": 13.50,
@@ -257,7 +257,7 @@
         "star": 3
     },
     {
-        "id": 25,
+        "product_id": 25,
         "path": "../images/25.jpg",
         "type": "new",
         "oldPrice": 14.00,
@@ -268,7 +268,7 @@
         "star": 4
     },
     {
-        "id": 26,
+        "product_id": 26,
         "path": "../images/26.jpg",
         "type": "new",
         "newPrice": 10.00,
@@ -278,7 +278,7 @@
         "star": 5
     },
     {
-        "id": 27,
+        "product_id": 27,
         "path": "../images/27.jpg",
         "type": "sale",
         "oldPrice": 12.75,

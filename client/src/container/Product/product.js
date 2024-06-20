@@ -9,7 +9,9 @@ import { RelatedProduct } from "../../components/relatedproduct";
 export const Product = () => {
   const { data, addToCart } = useContext(Shopcontext);
   const { productId } = useParams();
-  const product = data.find((item, index) => item.id === Number(productId));
+  const product = data.find(
+    (item, index) => item.product_id === Number(productId)
+  );
   return (
     <Box>
       <Grid container spacing={2} style={{ margin: "40px" }}>
@@ -18,7 +20,7 @@ export const Product = () => {
             <Grid item>
               <img
                 src={product.path}
-                alt={`${product.id}`}
+                alt={`${product.product_id}`}
                 width="140px"
                 height="auto"
               />
@@ -27,7 +29,7 @@ export const Product = () => {
             <Grid item>
               <img
                 src={product.path}
-                alt={`${product.id}`}
+                alt={`${product.product_id}`}
                 width="140px"
                 height="auto"
               />
@@ -35,7 +37,7 @@ export const Product = () => {
             <Grid item>
               <img
                 src={product.path}
-                alt={`${product.id}`}
+                alt={`${product.product_id}`}
                 width="140px"
                 height="auto"
               />
@@ -45,7 +47,7 @@ export const Product = () => {
         <Grid item>
           <img
             src={product.path}
-            alt={`${product.id}`}
+            alt={`${product.product_id}`}
             width="450px"
             height="auto"
           />
@@ -239,7 +241,7 @@ export const Product = () => {
                   padding: "15px",
                 }}
                 onClick={() => {
-                  addToCart(product.id);
+                  addToCart(product.product_id);
                 }}
               >
                 ADD TO CART

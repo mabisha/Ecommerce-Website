@@ -1,17 +1,19 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import data from "../assets/data.json";
 export const Shopcontext = createContext(null);
 
 const getDefaultCart = () => {
   let cart = {};
-  for (let index = 0; index < data.length + 1; index++) {
+  for (let index = 0; index < 30 + 1; index++) {
     cart[index] = 0;
   }
   return cart;
 };
 const ShopContextProvider = (props) => {
+  // const [data, setAllData] = useState([]);
   const [cartItem, setCartItem] = useState(getDefaultCart());
 
+  useEffect(() => {}, []);
   const addToCart = (itemId) => {
     setCartItem((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   };
@@ -19,7 +21,9 @@ const ShopContextProvider = (props) => {
     let totalAmount = 0;
     for (const item in cartItem) {
       if (cartItem[item] > 0) {
-        let itemInfo = data.find((product) => product.id === Number(item));
+        let itemInfo = data.find(
+          (product) => product.product_id === Number(item)
+        );
         totalAmount += itemInfo.newPrice * cartItem[item];
       }
     }

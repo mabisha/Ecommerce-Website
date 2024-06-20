@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "product_id": 1,
         "path": "../images/1.jpg",
         "type": "sale",
         "newPrice": 11.75,
@@ -10,7 +10,7 @@
         "star": 4
     },
     {
-        "id": 2,
+        "product_id": 2,
         "path": "../images/2.jpg",
         "type": "new",
         "oldPrice": 23.00,
@@ -21,7 +21,7 @@
         "star": 5
     },
     {
-        "id": 3,
+        "product_id": 3,
         "path": "../images/3.jpg",
         "type": "best",
         "oldPrice": 9.50,
@@ -32,7 +32,7 @@
         "star": 3
     },
     {
-        "id": 4,
+        "product_id": 4,
         "path": "../images/4.jpg",
         "type": "sale",
         "oldPrice": 13.50,
