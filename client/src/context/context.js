@@ -1,5 +1,4 @@
 import React, { createContext, useEffect, useState } from "react";
-import data from "../assets/data.json";
 export const Shopcontext = createContext(null);
 
 const getDefaultCart = () => {
@@ -10,10 +9,14 @@ const getDefaultCart = () => {
   return cart;
 };
 const ShopContextProvider = (props) => {
-  // const [data, setAllData] = useState([]);
+  const [data, setAllData] = useState([]);
   const [cartItem, setCartItem] = useState(getDefaultCart());
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    fetch("http://localhost:4000/api/getproducts")
+      .then((response) => response.json())
+      .then((resData) => setAllData(resData));
+  }, []);
   const addToCart = (itemId) => {
     setCartItem((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   };

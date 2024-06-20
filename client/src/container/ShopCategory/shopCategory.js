@@ -8,6 +8,7 @@ import { Star } from "../../components/star";
 
 export const ShopCategory = ({ category, banner }) => {
   const { data } = useContext(Shopcontext);
+  console.log(data);
   const filterData = data.filter((item, index) => item.category === category);
   const [visibleData, setVisibleData] = useState(4);
   useEffect(() => {

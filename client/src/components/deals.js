@@ -1,12 +1,13 @@
 import { Typography } from "@mui/material";
 import { Box, Grid, Button, Divider } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import data from "../assets/data.json";
 import { Loadmore } from "./loadmore";
 import { Star } from "./star";
+import { Shopcontext } from "../context/context";
 
 function Deal() {
+  const { data } = useContext(Shopcontext);
   const [category, setCategory] = useState("best");
   const [active, setActive] = useState("best");
   const [visibleData, setVisibleData] = useState(4);

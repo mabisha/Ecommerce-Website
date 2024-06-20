@@ -1,8 +1,10 @@
 import { Box, Grid, Typography, Pagination } from "@mui/material";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import data from "../../assets/data.json";
+import { Shopcontext } from "../../context/context";
+
 export const Shop = () => {
+  const { data } = useContext(Shopcontext);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 4;
   const handlePageChange = (event, value) => {

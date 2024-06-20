@@ -76,4 +76,17 @@ module.exports = {
       res.status(500).json({ success: false, errors: "Fail to add products" });
     }
   },
+  getAllProduct: async (req, res) => {
+    try {
+      const products = await Product.findAll({
+        order: [["product_id", "ASC"]],
+      });
+      res.send(products);
+    } catch (error) {
+      console.error(error);
+      res
+        .status(500)
+        .json({ success: false, errors: "Failed to retrieve products" });
+    }
+  },
 };
