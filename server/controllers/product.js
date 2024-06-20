@@ -125,24 +125,32 @@ module.exports = {
           id: req.user.id,
         },
       });
-      if (userData.cartData[req.body.itemId] > 0) {
+      if (userData.cartData[req.body.itemId] > 0)
         userData.cartData[req.body.itemId] -= 1;
-        await User.update(
-          { cartData: userData.cartData },
-          {
-            where: {
-              id: req.user.id,
-            },
-          }
-        );
-        res.status(200).json({
-          success: true,
-          message: "Item removed to cart",
-        });
-      }
+      await User.update(
+        { cartData: userData.cartData },
+        {
+          where: {
+            id: req.user.id,
+          },
+        }
+      );
+      res.status(200).json({
+        success: true,
+        message: "Item removed to cart",
+      });
     } catch (error) {
       console.log(error);
       res.status(500).json({ success: false, errors: error });
     }
+  },
+  getAllCart: async (req, res) => {
+    console.log("GetCart");
+    let userData = await User.findOne({
+      where: {
+        id: req.user.id,
+      },
+    });
+    res.json(userData.cartData);
   },
 };

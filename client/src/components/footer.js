@@ -33,7 +33,7 @@ function Footer() {
               © 2024 Flone. All Rights Reserved
             </Typography>
           </Grid>
-          <Grid item>
+          {/* <Grid item>
             <Typography
               variant="h6"
               style={{
@@ -87,7 +87,7 @@ function Footer() {
                 About Us
               </Link>
             </Typography>
-          </Grid>
+          </Grid> */}
           <Grid item>
             <Typography
               variant="h6"

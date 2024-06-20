@@ -16,4 +16,9 @@ router.post(
   authController.fetchUser,
   productController.removeFromCart
 );
+router.post(
+  "/api/getcart",
+  authController.fetchUser,
+  productController.getAllCart
+);
 module.exports = router;

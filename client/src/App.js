@@ -84,12 +84,12 @@ const AppContent = ({ menu, setMenu }) => {
         >
           {localStorage.getItem("auth-token") ? (
             <Link
-              to="/login"
               style={{
                 textDecoration: "none",
               }}
               onClick={() => {
                 localStorage.removeItem("auth-token");
+                window.location.replace("/login");
               }}
             >
               <LogoutIcon

@@ -78,7 +78,7 @@ const Nav = ({ menu, setMenu }) => {
             </li>
           </ul>
         </li>
-        <li className="app-list">
+        {/* <li className="app-list">
           <Link
             style={{
               textDecoration: "none",
@@ -89,7 +89,7 @@ const Nav = ({ menu, setMenu }) => {
           >
             Contact {menu === "Contact" ? <hr color="#ce9aff" /> : <></>}
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

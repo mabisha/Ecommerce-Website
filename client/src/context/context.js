@@ -11,11 +11,24 @@ const getDefaultCart = () => {
 const ShopContextProvider = (props) => {
   const [data, setAllData] = useState([]);
   const [cartItem, setCartItem] = useState(getDefaultCart());
-
+  console.log(cartItem);
   useEffect(() => {
     fetch("http://localhost:4000/api/getproducts")
       .then((response) => response.json())
       .then((resData) => setAllData(resData));
+    if (localStorage.getItem("auth-token")) {
+      fetch("http://localhost:4000/api/getcart", {
+        method: "POST",
+        headers: {
+          Accept: "application/form-data",
+          "auth-token": `${localStorage.getItem("auth-token")}`,
+          "Content-type": "application/json",
+        },
+        body: "",
+      })
+        .then((response) => response.json())
+        .then((data) => setCartItem(data));
+    }
   }, []);
   const addToCart = (itemId) => {
     setCartItem((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));

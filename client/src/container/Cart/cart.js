@@ -9,7 +9,6 @@ export const Cart = () => {
   const { data, cartItem, removeFromCart, getTotalCartAmount } =
     useContext(Shopcontext);
   const cartItems = data.find((item, index) => cartItem[item.product_id] > 0);
-  console.log(cartItems);
   return (
     <Box mt={2} mr={4} ml={4}>
       {cartItems ? (
@@ -50,7 +49,7 @@ export const Cart = () => {
           {data.map((item, index) => {
             if (cartItem[item.product_id] > 0) {
               return (
-                <Grid item key={item.product_id}>
+                <Grid item key={item.id}>
                   <Grid
                     container
                     justifyContent="space-between"
