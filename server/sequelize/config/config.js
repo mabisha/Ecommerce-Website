@@ -5,6 +5,7 @@ module.exports = {
     database: "fusion",
     host: "127.0.0.1",
     dialect: "postgres",
+    dialectModule: pg,
   },
   test: {
     username: "root",
@@ -19,5 +20,6 @@ module.exports = {
     database: process.env.REACT_APP_DB_NAME,
     host: process.env.REACT_APP_DB_HOST,
     dialect: "postgres",
+    dialectModule: pg,
   },
 };
