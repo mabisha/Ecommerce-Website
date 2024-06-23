@@ -9,7 +9,7 @@
     "start": "nodemon ./index.js",
     "dev": "nodemon ./index.js",
     "build": "npm install",
-    "vercel-build": "npm install && npx sequelize-cli db:migrate --config sequelize/config/config.js",
+    "vercel-build": "npm install && npx sequelize-cli db:migrate --config sequelize/config/config.js --migrations-path sequelize/migrations",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
