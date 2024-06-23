@@ -21,5 +21,6 @@ module.exports = {
     // host: process.env.REACT_APP_DB_HOST,
     url: process.env.DB_URL,
     dialect: "postgres",
+    dialectModule: require("pg"),
   },
 };
