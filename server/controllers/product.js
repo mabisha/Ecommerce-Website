@@ -75,7 +75,7 @@ module.exports = {
       });
     } catch (error) {
       console.error(error);
-      res.status(500).json({ success: false, errors: "Fail to add products" });
+      res.status(500).json({ success: false, errors: error });
     }
   },
   getAllProduct: async (req, res) => {
