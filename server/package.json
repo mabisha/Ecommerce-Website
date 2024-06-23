@@ -10,7 +10,7 @@
     "dev": "nodemon ./index.js",
     "build": "npm i",
     "test": "echo \"Error: no test specified\" && exit 1",
-     "postinstall": "npm install pg"
+    "postinstall": "npm install pg"
   },
   "author": "",
   "license": "ISC",
