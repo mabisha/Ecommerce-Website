@@ -14,10 +14,10 @@ module.exports = {
     dialect: "postgres",
   },
   production: {
-    username: process.env.REACT_APP_DATABASE_USERNAME,
-    password: process.env.REACT_APP_DATABASE_PASSWORD,
-    database: process.env.REACT_APP_DATABASE_NAME,
-    host: process.env.REACT_APP_DATABASE_HOST,
+    username: process.env.REACT_APP_DB_USERNAME,
+    password: process.env.REACT_APP_DB_PASSWORD,
+    database: process.env.REACT_APP_DB_NAME,
+    host: process.env.REACT_APP_DB_HOST,
     dialect: "postgres",
   },
 };
