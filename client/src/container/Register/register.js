@@ -1,7 +1,7 @@
 import { Box, Grid, TextField, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
-
+const baseURL = process.env.API_URL || "http://localhost:4000";
 export const Register = () => {
   const [formData, setFormData] = useState({
     username: "",
@@ -13,7 +13,7 @@ export const Register = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:4000/api/signup", {
+      const response = await fetch(`${baseURL}api/signup`, {
         method: "POST",
         headers: {
           Accept: "application/json",
