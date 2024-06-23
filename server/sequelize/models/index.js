@@ -20,7 +20,7 @@ const db = {};
 //     config
 //   );
 // }
-const sequelize = new Sequelize(`${config.url}?sslmode=disable`, config);
+const sequelize = new Sequelize(`${config.url}`, config);
 fs.readdirSync(__dirname)
   .filter((file) => {
     return (
