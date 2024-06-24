@@ -7,14 +7,10 @@
 
         }
     ],
-     "routes": [
+    "routes": [
     {
       "src": "/images/(.*)",
-      "dest": "/upload/images/$1"
-    },
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "dest": "/upload/images/"
     }
   ]
 }
