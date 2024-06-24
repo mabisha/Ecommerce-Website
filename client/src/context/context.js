@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 export const Shopcontext = createContext(null);
-const baseURL = process.env.API_URL || "http://localhost:4000";
+const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000";
 
 const getDefaultCart = () => {
   let cart = {};
