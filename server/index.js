@@ -7,7 +7,14 @@ const app = express();
 const userRouter = require("./routes/user");
 const productRouter = require("./routes/product");
 app.use(express.json()); // All requests will be parsed to JSON
-app.use(cors()); // Enable CORS
+app.use(
+  cors({
+    origin: "https://ecommerce-website-psi-seven.vercel.app",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    credentials: true,
+    optionsSuccessStatus: 204,
+  })
+);
 app.use("/images", express.static("upload/images"));
 app.get("/", (req, res) => {
   res.send("Express App is running");
