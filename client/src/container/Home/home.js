@@ -9,7 +9,7 @@ import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
 import Deal from "../../components/deals";
 import "../Home/home.css";
 import { Banner } from "../../components/banner";
-const baseURL = process.env.REACT_APP_API_URL || "http://localhost:4000";
+const baseURL = process.env.REACT_APP_API_URL;
 const images = [
   { text: "Winter Offer", src: `${baseURL}/images/home-image.png` },
   { text: "Summer Offer", src: `${baseURL}/images/home-image2.png` },
