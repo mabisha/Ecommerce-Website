@@ -11,8 +11,8 @@ import "../Home/home.css";
 import { Banner } from "../../components/banner";
 const baseURL = process.env.REACT_APP_API_URL;
 const images = [
-  { text: "Winter Offer", src: `${baseURL}/images/home-image.png` },
-  { text: "Summer Offer", src: `${baseURL}/images/home-image2.png` },
+  { text: "Winter Offer", src: `../images/home-image.png` },
+  { text: "Summer Offer", src: `../images/home-image2.png` },
 ];
 const Home = ({ menu, setMenu }) => {
   const [currentSlide, setCurrentSlide] = useState(0);

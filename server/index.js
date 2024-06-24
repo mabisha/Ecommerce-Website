@@ -9,7 +9,12 @@ const productRouter = require("./routes/product");
 app.use(express.json()); // All requests will be parsed to JSON
 app.use(
   cors({
-    origin: "https://ecommerce-website-psi-seven.vercel.app",
+    origin: [
+      "https://ecommerce-websiteserver.vercel.app",
+      "https://ecommerce-website-psi-seven.vercel.app",
+      `http://localhost:${PORT}`,
+      "http://localhost:3000",
+    ],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
     optionsSuccessStatus: 204,
