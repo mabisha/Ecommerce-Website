@@ -7,7 +7,7 @@
 
         }
     ],
-    "routes": [
+     "routes": [
     {
       "src": "/images/(.*)",
       "dest": "/upload/images/$1"
