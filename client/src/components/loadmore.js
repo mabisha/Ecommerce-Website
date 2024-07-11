@@ -1,9 +1,13 @@
 import { Button, Grid } from "@mui/material";
 import React from "react";
 
-export const Loadmore = ({ visibleData, setVisibleData }) => {
+export const Loadmore = ({ setVisibleData, setLoadingMore }) => {
   const handleLoadMoreItems = () => {
-    setVisibleData((prevVisibleItems) => prevVisibleItems + 4);
+    setLoadingMore(true);
+    setTimeout(() => {
+      setVisibleData((prevVisibleData) => prevVisibleData + 4);
+      setLoadingMore(false);
+    }, 1000);
   };
   return (
     <Grid item style={{ margin: "40px" }}>

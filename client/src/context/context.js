@@ -10,13 +10,18 @@ const getDefaultCart = () => {
   return cart;
 };
 const ShopContextProvider = (props) => {
+  const [isLoading, setIsLoading] = useState(false);
   const [data, setAllData] = useState([]);
   const [cartItem, setCartItem] = useState(getDefaultCart());
   console.log(cartItem);
   useEffect(() => {
+    setIsLoading(true);
     fetch(`${baseURL}/api/getproducts`)
       .then((response) => response.json())
-      .then((resData) => setAllData(resData));
+      .then((resData) => {
+        setAllData(resData);
+        setIsLoading(false);
+      });
     if (localStorage.getItem("auth-token")) {
       fetch(`${baseURL}/api/getcart`, {
         method: "POST",
@@ -91,6 +96,8 @@ const ShopContextProvider = (props) => {
     removeFromCart,
     getTotalCartAmount,
     getTotalCartItems,
+    isLoading,
+    setIsLoading,
   };
   return (
     <Shopcontext.Provider value={contextValue}>

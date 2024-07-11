@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 import { Loadmore } from "./loadmore";
 import { Star } from "./star";
 import { Shopcontext } from "../context/context";
-
+import { RotatingLines } from "react-loader-spinner";
 function Deal() {
-  const { data } = useContext(Shopcontext);
+  const { data, isLoading } = useContext(Shopcontext);
+  const [loadingMore, setLoadingMore] = useState(false);
   const [category, setCategory] = useState("best");
   const [active, setActive] = useState("best");
   const [visibleData, setVisibleData] = useState(4);
@@ -108,6 +109,17 @@ function Deal() {
               alignItems="center"
               justifyContent="center"
             >
+              {isLoading ? (
+                <div>
+                  <RotatingLines
+                    strokeColor="grey"
+                    strokeWidth="5"
+                    animationDuration="0.75"
+                    width="59"
+                    visible={true}
+                  ></RotatingLines>
+                </div>
+              ) : null}
               {filterData.slice(0, visibleData).map((item, index) => (
                 <Grid item key={index} xs={3}>
                   <Link to={`/product/${item.product_id}`}>
@@ -116,7 +128,7 @@ function Deal() {
                       alt={`${item.product_id}`}
                       width="100%"
                       height="auto"
-                      onClick={window.scrollTo(0, 0)}
+                      // onClick={window.scrollTo(0, 0)}
                     ></img>
                   </Link>
 
@@ -163,9 +175,21 @@ function Deal() {
                   </div>
                 </Grid>
               ))}
+              {loadingMore && (
+                <RotatingLines
+                  strokeColor="grey"
+                  strokeWidth="5"
+                  animationDuration="0.75"
+                  width="59"
+                  visible={true}
+                ></RotatingLines>
+              )}
             </Grid>
           </Grid>
-          <Loadmore visibleData={visibleData} setVisibleData={setVisibleData} />
+          <Loadmore
+            setVisibleData={setVisibleData}
+            setLoadingMore={setLoadingMore}
+          />
         </Grid>
       </Box>
     </div>
