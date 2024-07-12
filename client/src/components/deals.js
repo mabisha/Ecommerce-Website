@@ -28,7 +28,6 @@ function Deal() {
           justifyContent="center"
           flexDirection="column"
           alignItems="center"
-          gap="6"
         >
           <Grid item>
             <div

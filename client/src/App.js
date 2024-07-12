@@ -57,7 +57,7 @@ const AppContent = ({ menu, setMenu }) => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          margin: "0 20px 0 20px",
+          // margin: "0 20px 0 20px",
         }}
       >
         <div>
