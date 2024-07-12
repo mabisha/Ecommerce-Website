@@ -29,7 +29,7 @@ function Deal() {
           flexDirection="column"
           alignItems="center"
         >
-          <Grid item>
+          <Grid item style={{ margin: "20px" }}>
             <div
               style={{
                 display: "flex",
@@ -41,7 +41,6 @@ function Deal() {
                 style={{
                   width: "100px",
                   backgroundColor: "black",
-                  marginRight: "10px",
                   padding: "1px",
                 }}
               />
@@ -50,6 +49,7 @@ function Deal() {
                 style={{
                   fontFamily: "Montserrat, sans-serif",
                   fontWeight: "500",
+                  flexShrink: "0",
                 }}
               >
                 Daily Deals
@@ -58,7 +58,6 @@ function Deal() {
                 style={{
                   width: "100px",
                   backgroundColor: "black",
-                  marginLeft: "10px",
                   padding: "1px",
                 }}
               />
@@ -70,7 +69,7 @@ function Deal() {
                 style={{
                   fontFamily: "Montserrat, sans-serif",
                   color: active === "best" ? "white" : "black",
-                  margin: "20px",
+                  margin: "0 20px 0 20px",
                   backgroundColor: active === "best" ? "black" : "",
                 }}
                 onClick={() => handleCategoryChange("best")}
@@ -81,7 +80,7 @@ function Deal() {
                 style={{
                   fontFamily: "Montserrat, sans-serif",
                   color: active === "new" ? "white" : "black",
-                  margin: "20px",
+                  margin: "0 20px 0 20px",
                   backgroundColor: active === "new" ? "black" : "",
                 }}
                 onClick={() => handleCategoryChange("new")}
@@ -92,7 +91,7 @@ function Deal() {
                 style={{
                   fontFamily: "Montserrat, sans-serif",
                   color: active === "sale" ? "white" : "black",
-                  margin: "20px",
+                  margin: "0 20px 0 20px",
                   backgroundColor: active === "sale" ? "black" : "",
                 }}
                 onClick={() => handleCategoryChange("sale")}
@@ -101,12 +100,12 @@ function Deal() {
               </Button>
             </div>
           </Grid>
-          <Grid item style={{ margin: "40px" }}>
+          <Grid item style={{ margin: "20px" }}>
             <Grid
               container
-              spacing={6}
               alignItems="center"
               justifyContent="center"
+              spacing={2}
             >
               {isLoading ? (
                 <div>
@@ -120,7 +119,7 @@ function Deal() {
                 </div>
               ) : null}
               {filterData.slice(0, visibleData).map((item, index) => (
-                <Grid item key={index} xs={3}>
+                <Grid item key={index} lg={3} xs={12} sm={6}>
                   <Link to={`/product/${item.product_id}`}>
                     <img
                       src={item.path}
@@ -130,7 +129,6 @@ function Deal() {
                       // onClick={window.scrollTo(0, 0)}
                     ></img>
                   </Link>
-
                   <div
                     style={{
                       display: "flex",

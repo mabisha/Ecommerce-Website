@@ -10,10 +10,9 @@ export const Banner = ({ menu, setMenu }) => {
           container
           justifyContent="center"
           alignItems="center"
-          spacing={5}
           flexDirection="column"
         >
-          <Grid item>
+          <Grid item style={{ margin: "20px" }}>
             <div
               style={{
                 display: "flex",
@@ -25,7 +24,6 @@ export const Banner = ({ menu, setMenu }) => {
                 style={{
                   width: "100px",
                   backgroundColor: "black",
-                  marginRight: "10px",
                   padding: "1px",
                 }}
               />
@@ -34,15 +32,15 @@ export const Banner = ({ menu, setMenu }) => {
                 style={{
                   fontFamily: "Montserrat, sans-serif",
                   fontWeight: "500",
+                  flexShrink: "0",
                 }}
               >
-                Discover More
+                Discover
               </Typography>
               <Divider
                 style={{
                   width: "100px",
                   backgroundColor: "black",
-                  marginLeft: "10px",
                   padding: "1px",
                 }}
               />

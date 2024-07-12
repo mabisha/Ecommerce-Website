@@ -80,3 +80,22 @@
   .icons:hover{
     animation: shake 0.5s; ;
   }
+    @media only screen and (max-width: 600px) {
+      .male-banner {
+          
+          width: 200px;
+          height: 200px;
+        }
+      
+        .female-banner {
+          
+          width: 200px;
+          height: 200px;
+        }
+      
+        .kids-banner {
+          
+          width: 200px;
+          height: 200px;
+        }
+    }
